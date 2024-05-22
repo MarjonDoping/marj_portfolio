@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes move {
+  0% {
+      transform: translateX(0);
+  }
+  50% {
+      transform: translateX(20px);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+
+.animate-move {
+  animation: move 2s infinite; /* Adjust duration and iteration as needed */
+}
+
+@keyframes slideOutRight {
+  0% {
+    transform: translateY(0);
+}
+50% {
+    transform: translateY(-50px);
+}
+100% {
+    transform: translateY(0);
+}
+}
+.animate-slide-out-right {
+  animation: slideOutRight 5s forwards infinite; /* Adjust duration and iteration as needed */
+}
+
+@keyframes slideOutRight1 {
+  100% {
+    transform: translateY(100);
+}
+100% {
+    transform: translateY(50px);
+}
+50% {
+    transform: translateY(-100);
+}
+}
+.animate-slide-out-right1 {
+  animation: slideOutRight1 5s forwards infinite; /* Adjust duration and iteration as needed */
+}
+
+@keyframes slideLeft {
+  from {
+      transform: translateX(100%);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+}
+
+.animate-slide-left {
+  animation: slideLeft 10s linear infinite;
+}
+
+@keyframes slideRight {
+  from {
+      transform: translateX(-100%);
+  }
+  to {
+      transform: translateX(100%);
+  }
+}
+
+.animate-slide-right {
+  animation: slideRight 10s linear infinite;
+}
+
+
+.logo-carousel {
+  width: 100%;
+  margin: auto;
+}
+
+.slick-slide img {
+  width: 100%;
+  height: auto;
+
+}
+
+
+.partners-container {
+  display: flex;
+  animation: scroll 50s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-150px * 11)); /* Adjust the value based on the number of partners and the width of each logo */
+  }
+}
+
+.partners-container1 {
+  display: flex;
+  animation: scroll2 50s linear infinite;
+}
+
+@keyframes scroll2 {
+  0% {
+    transform: translateX(calc(-600px * 3)); /* Adjust the value based on the number of partners and the width of each logo */
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.testimonials-slider .slick-slide {
+  padding: 0 10px; /* Adjust as needed */
+}
+
+@media (max-width: 768px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .grid > div {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .grid {
+    display: grid;
+  }
+}
+
+
+.custom-card {
+  position: relative;
+  border: 1px solid transparent; /* Start with a transparent border */
+  transition: border-color 0.2s ease-in-out; /* Transition effect */
+  border-radius: 10px;
+}
+
+.custom-card:hover {
+  border-color: rgb(219, 219, 219); /* Change border color to yellow on hover */
+  transform: translateY(-5px); /* Move the card up slightly on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+}
