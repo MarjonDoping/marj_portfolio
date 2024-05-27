@@ -72,7 +72,7 @@ const Livepreview = () => {
       <div className="grid grid-cols-2 gap-8 max-w-screen-xl mx-auto py-12 px-12">
         {/* Cards */}
         {filteredCards.map((card) => (
-          <div className="custom-card bg-secondaryBlack border rounded-lg shadow dark:bg-gray-800 dark:border-gray-800" key={card.id}>
+          <div className="custom-card bg-secondaryBlack border rounded-lg shadow " key={card.id}>
             <a href="#">
               <img className="rounded-t-lg" src={card.image} alt="" />
             </a>
