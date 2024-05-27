@@ -25,18 +25,18 @@ export default {
       },
     },
 
-    // fontSize: {
-    //   sm: "0.8rem",
-    //   base: "1rem",
-    //   xl: "1.25rem",
-    //   "1xl": "3rem",
-    //   "2xl": "1.563rem",
-    //   "3xl": "1.953rem",
-    //   "4xl": "2.25rem",
-    //   "5xl": "5.625rem",
-    //   "6xl": "9.375rem",
-    //   "7xl": "4.375rem",
-    // },
+    fontSize: {
+      sm: "0.8rem",
+      base: "1rem",
+      xl: "1.25rem",
+      "mh1": "3rem",
+      "mh2": "1.563rem",
+      "mh3": "1.953rem",
+      "mh4": "2.25rem",
+      "mh5": "5.625rem",
+      "mh6": "9.375rem",
+      "mh7": "4.375rem",
+    },
 
     animation: {
       move: "move 4s infinite ease-in-out",

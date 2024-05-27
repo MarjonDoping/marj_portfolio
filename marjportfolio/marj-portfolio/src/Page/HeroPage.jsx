@@ -21,7 +21,7 @@ const HeroPage = () => {
         />
 
         <div className="text-center">
-          <h1 className="text-4xl font-bold mb-4">
+          <h1 className="text-mh5 font-bold mb-4">
             Need a <br />
             <span
               style={{
@@ -33,8 +33,8 @@ const HeroPage = () => {
                 color: "transparent",
               }}
             >
-              Website that{" "}
-            </span>{" "}
+              Website that
+            </span>
             <br /> <span>wows?</span>
           </h1>
         </div>
