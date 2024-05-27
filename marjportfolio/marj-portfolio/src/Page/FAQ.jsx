@@ -45,7 +45,8 @@ const FAQ = () => {
         "Yes, I offer revisions and edits to ensure that the final deliverables meet your expectations. The number of revisions included may vary depending on the project. Additional revisions beyond the initial scope may incur extra fees.",
     },
     {
-      question: "Are you available for ongoing support after the project is completed?",
+      question:
+        "Are you available for ongoing support after the project is completed?",
       answer:
         "Yes, I provide ongoing support and maintenance services to clients even after the project is completed. Whether you need updates, troubleshooting, or further assistance, I'm here to help ensure your continued success.",
     },
@@ -62,7 +63,7 @@ const FAQ = () => {
   ];
 
   return (
-    < >
+    <>
       <div className="bg-cover bg-center py-24">
         <div className="max-w-screen-xl mx-auto px-5">
           <div className="flex justify-center items-center">
@@ -72,10 +73,12 @@ const FAQ = () => {
           </div>
 
           <h1 className="text-3xl font-bold mb-4 text-center p-4 text-black">
-          Don’t see your question here? Get in touch
+            Don’t see your question here? Get in touch
           </h1>
           <p className=" text-black mb-8 text-center">
-          My expertise in Figma designs, WordPress development, and React.js code allows us to provide comprehensive solutions tailored to your specific needs.
+            My expertise in Figma designs, WordPress development, and React.js
+            code allows us to provide comprehensive solutions tailored to your
+            specific needs.
           </p>
 
           <div>
@@ -128,9 +131,7 @@ const FAQ = () => {
                     accordionOpen === index ? "block" : "hidden"
                   } p-5 border border-b-0 border-gray-200 bg-gray-100`}
                 >
-                  <p className="mb-2 text-black ">
-                    {item.answer}
-                  </p>
+                  <p className="mb-2 text-black ">{item.answer}</p>
                 </div>
               </div>
             ))}
