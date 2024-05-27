@@ -20,7 +20,7 @@ const WebDesignHeroPage = () => {
         {/* Left Column */}
         <div className="w-1/2  pl-100">
           <div className="px-8">
-            <h1 className="text-1xl items-center text-white font-bold mb-4 ">
+            <h1 className="text-mh1 items-center text-white font-bold mb-4 ">
               Let's{" "}
               <span
                 style={{

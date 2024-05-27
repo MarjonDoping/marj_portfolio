@@ -17,7 +17,7 @@ const PortfolioHeroPage = () => {
         <div className="w-1/2 pl-100">
           {/* <img src="/images/Multiplayer1.png" alt="Background" className="absolute inset-40 object-cover h-12 opacity-100 animate-move" /> */}
           <div className="px-8">
-            <h1 className="text-1xl items-center text-white font-bold mb-4 ">
+            <h1 className="text-mh1 items-center text-white font-bold mb-4 ">
               Let's{" "}
               <span
                 style={{

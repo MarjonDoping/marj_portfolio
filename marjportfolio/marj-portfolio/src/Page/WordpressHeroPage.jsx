@@ -15,7 +15,7 @@ const WordpressHeroPage = () => {
       <div className="w-1/2  pl-100">
         <div className="px-8">
        
-          <h1 className="text-1xl items-center text-white font-bold mb-4 ">"Ready to <span style={{
+          <h1 className="text-mh1 items-center text-white font-bold mb-4 ">"Ready to <span style={{
         display: 'inline-block',
         backgroundImage: 'linear-gradient(142deg, #002268 2.02%, #A1D3FF 110.76%)',
         WebkitBackgroundClip: 'text',
