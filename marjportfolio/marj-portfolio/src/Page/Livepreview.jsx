@@ -55,7 +55,7 @@ const Livepreview = () => {
       {/* Dropdown for filtering */}
       <div className="flex  pt-6 max-w-screen-xl mx-auto px-12">
       <select
-          className="  bg-primaryBlack rounded-lg  border-gray-700 text-gray-200 py-3 px-4 pr-8   focus:outline-none focus:bg-secondaryBlack focus:border-gray-500"
+          className="  bg-primaryBlack rounded-lg  border-gray-700 text-gray-200 py-3 px-4 pr-8   focus:outline-none "
           value={currentCategory}
           onChange={handleCategoryChange}
         >
@@ -72,7 +72,7 @@ const Livepreview = () => {
       <div className="grid grid-cols-2 gap-8 max-w-screen-xl mx-auto py-12 px-12">
         {/* Cards */}
         {filteredCards.map((card) => (
-          <div className="custom-card bg-secondaryBlack border border-gray-800 rounded-lg shadow dark:bg-gray-800 dark:border-gray-800" key={card.id}>
+          <div className="custom-card bg-secondaryBlack border rounded-lg shadow dark:bg-gray-800 dark:border-gray-800" key={card.id}>
             <a href="#">
               <img className="rounded-t-lg" src={card.image} alt="" />
             </a>

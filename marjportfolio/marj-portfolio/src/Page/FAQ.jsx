@@ -83,7 +83,7 @@ const FAQ = () => {
               <div key={index}>
                 <h2>
                   <button
-                    className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-black border border-b-0 border-gray-200 rounded-t-xl focus:ring-3 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 "
+                    className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-black border border-b-0  rounded-t-xl  "
                     onClick={() => toggleAccordion(index)}
                     aria-expanded={accordionOpen === index ? "true" : "false"}
                     aria-controls={`accordion-body-${index}`}
@@ -126,9 +126,9 @@ const FAQ = () => {
                   id={`accordion-body-${index}`}
                   className={`${
                     accordionOpen === index ? "block" : "hidden"
-                  } p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-200`}
+                  } p-5 border border-b-0 border-gray-200 bg-gray-100`}
                 >
-                  <p className="mb-2 text-gray-700 dark:text-gray-400">
+                  <p className="mb-2 text-black ">
                     {item.answer}
                   </p>
                 </div>

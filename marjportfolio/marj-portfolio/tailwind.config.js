@@ -29,13 +29,13 @@ export default {
       sm: "0.8rem",
       base: "1rem",
       xl: "1.25rem",
+      "1xl": "3rem",
       "2xl": "1.563rem",
       "3xl": "1.953rem",
-      "4xl": "36px",
-      "5xl": "90px",
-      "6xl": "150px",
-      "7xl": "70px",
-      "8xl": "48px",
+      "4xl": "2.25rem",
+      "5xl": "5.625rem",
+      "6xl": "9.375rem",
+      "7xl": "4.375rem",
     },
 
     animation: {

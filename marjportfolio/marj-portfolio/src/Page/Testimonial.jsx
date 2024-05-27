@@ -4,44 +4,44 @@ import { PrimaryChip } from '../components/Chips';
 const testimonials = [
   {
     id: 1,
-    name: 'John Doe',
-    position: 'CEO, Company X',
-    comment: '"Working with [Your Name] as a graphic designer was an absolute pleasure. Their ability to translate complex ideas into captivating visual representations is truly remarkable. They bring a unique flair to every project they undertake."',
-    avatarUrl: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YXZhdGFyfGVufDB8fDB8fHww', // Add avatar URL here
+    name: 'Angeline Seveses',
+    position: 'Web Designer, NMS',
+    comment: '"Working with Marjon as a web designer was an absolute pleasure. Their ability to translate complex ideas into captivating visual representations is truly remarkable. They bring a unique flair to every project they undertake."',
+    avatarUrl: 'https://media.licdn.com/dms/image/D5603AQHccF0YAtOz1A/profile-displayphoto-shrink_800_800/0/1706614856823?e=1721865600&v=beta&t=YFQn2Xr4KAZUcKi6m1iw92uj9k5TdTJdZv9bQ-MYb1s',
   },
   {
     id: 2,
     name: 'John Doe',
     position: 'CEO, Company X',
-    comment: '"As a graphic designer, [Your Name] has a rare talent for turning concepts into visual masterpieces. Their ability to capture the essence of our brand and convey it through stunning graphics has greatly enhanced our marketing efforts."',
-    avatarUrl: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YXZhdGFyfGVufDB8fDB8fHww', // Add avatar URL here
+    comment: '"As a graphic designer, Marjon has a rare talent for turning concepts into visual masterpieces. Their ability to capture the essence of our brand and convey it through stunning graphics has greatly enhanced our marketing efforts."',
+    avatarUrl: 'https://media.licdn.com/dms/image/D5603AQHccF0YAtOz1A/profile-displayphoto-shrink_800_800/0/1706614856823?e=1721865600&v=beta&t=YFQn2Xr4KAZUcKi6m1iw92uj9k5TdTJdZv9bQ-MYb1s', // Add avatar URL here
   },
   {
     id: 3,
-    name: 'John Doe',
-    position: 'CEO, Company X',
-    comment: '"As a web designer, [Your Name] has an unmatched eye for detail and creativity. Their designs are not only visually stunning but also highly functional, creating seamless user experiences."',
-    avatarUrl: 'https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YXZhdGFyfGVufDB8fDB8fHww', // Add avatar URL here
+    name: 'Adelynne Malubay',
+    position: 'Web Designer, NMS',
+    comment: '"As a web designer, Marj has an unmatched eye for detail and creativity. Their designs are not only visually stunning but also highly functional, creating seamless user experiences."',
+    avatarUrl: 'https://media.licdn.com/dms/image/D5603AQFx5ohGGpTikg/profile-displayphoto-shrink_200_200/0/1695915049947?e=2147483647&v=beta&t=j6ZAo_1XdkVHJWy5x21OTy4ybqMxT7w2jUhKH6TjVR4', // Add avatar URL here
   },
   {
     id: 4,
     name: 'John Doe',
-    position: 'CEO, Company X',
-    comment: '"Thanks to [Your Name]s SEO skills, our websites visibility and organic traffic have significantly increased. Their strategic approach to optimization and attention to detail have made a noticeable impact on our online presence."',
+    position: 'Web Designer',
+    comment: '"Thanks to your SEO skills, our websites visibility and organic traffic have significantly increased. Their strategic approach to optimization and attention to detail have made a noticeable impact on our online presence."',
     avatarUrl: 'https://images.unsplash.com/photo-1639149888905-fb39731f2e6c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D', // Add avatar URL here
   },
   {
     id: 5,
     name: 'John Doe',
     position: 'CEO, Company X',
-    comment: 'Ive had the pleasure of collaborating with [Your Name] on several projects, and each time, theyve proven themselves to be a highly skilled and reliable SEO expert. Their in-depth knowledge of search engine algorithms and dedication to staying updated on industry trends make them a valuable asset to any team."',
+    comment: 'Ive had the pleasure of collaborating with Marjon on several projects, and each time, theyve proven themselves to be a highly skilled and reliable SEO expert. Their in-depth knowledge of search engine algorithms and dedication to staying updated on industry trends make them a valuable asset to any team."',
     avatarUrl: 'https://plus.unsplash.com/premium_photo-1670884442192-7b58d513cd55?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzd8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D', // Add avatar URL here
   },
   {
     id: 6,
     name: 'John Doe',
     position: 'CEO, Company X',
-    comment: 'As a web designer, [Your Name] has an innate ability to balance aesthetics with functionality. They have a keen eye for design and a deep understanding of user experience, resulting in websites that not only look great but also perform exceptionally well."',
+    comment: 'As a web designer, Marjon has an innate ability to balance aesthetics with functionality. They have a keen eye for design and a deep understanding of user experience, resulting in websites that not only look great but also perform exceptionally well."',
     avatarUrl: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODJ8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D', // Add avatar URL here
   },
   // Add more testimonials here

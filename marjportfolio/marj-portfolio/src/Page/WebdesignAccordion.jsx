@@ -44,7 +44,7 @@ const Accordion = ({ title, children, cardContent }) => {
 
 const WebdesignAccordion = () => {
   return (
-    <div className="bg-primaryBlack">
+    <div className="bg-primaryBlack px-8">
       <div className="max-w-screen-xl mx-auto py-24">
         <div className="flex justify-center items-center">
           {/* <PrimaryChip>

@@ -2,6 +2,7 @@ import React from "react";
 import { Avatar1 } from "../components/Avatar";
 import { PrimaryChip } from "../components/Chips";
 import { SecondaryButton } from "../components/Button";
+import { Link } from "react-router-dom";
 
 const CollaboratePage = () => {
   return (
@@ -30,18 +31,20 @@ const CollaboratePage = () => {
             </p>
           </div>
           <p className="text-white font-jakarta-sans font-normal text-normal leading-56 pt-7">
-            Drop me a line and let's discuss how Figma and my design expertise can
-            bring your ideas to life!
+            Drop me a line and let's discuss how Figma and my design expertise
+            can bring your ideas to life!
           </p>
           <div className="pt-4"></div>
         </div>
-        <div className="w-1/3 flex justify-center items-center">
-        <SecondaryButton> Collaborate with me</SecondaryButton>
-        </div>
+        <Link to="/contactPage">
+          {" "}
+          <div className="py-12 flex justify-center items-center">
+            <SecondaryButton> Collaborate with me</SecondaryButton>
+          </div>
+        </Link>
       </div>
     </div>
   );
 };
 
 export default CollaboratePage;
-

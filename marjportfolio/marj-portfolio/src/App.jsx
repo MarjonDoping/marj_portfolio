@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MymainPortfolio from './Page/MymainPortfolio';
 import WebDesign from './Page/WebDesign';
 import WordpressPage from './Page/WordpressPage';
+import ContactPage from './Page/ContactPage';
 
 
 
@@ -24,6 +25,7 @@ function App() {
             <Route path="/portfolio" element={<MymainPortfolio />} />
             <Route path="/webDesign" element={<WebDesign />} />
             <Route path="/Wordpress" element={<WordpressPage />} />
+            <Route path="/contactPage" element={<ContactPage />} />
           </Routes>
         </Router>
    
