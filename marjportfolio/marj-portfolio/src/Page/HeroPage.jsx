@@ -21,7 +21,7 @@ const HeroPage = () => {
         />
 
         <div className="text-center">
-          <h1 className="text-5xl font-bold mb-4">
+          <h1>
             Need a <br />
             <span
               style={{
