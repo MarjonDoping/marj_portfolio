@@ -22,7 +22,7 @@ const HeroPage = () => {
 
         <div className="text-center">
           <h1 className="text-5xl font-bold mb-4">
-            <span>Need a</span> <br />{" "}
+            Need a <br />
             <span
               style={{
                 display: "inline-block",
