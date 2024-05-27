@@ -46,7 +46,7 @@ const ContactHeroPage = () => {
               }}
             >
               Collaborate with me
-            </span>{" "}
+            </span>
             and let's make your brand to the peak
             <p className=" mb-4 text-base text-white font-light sticky mt-4">
               Collaborate with me and let's make your brand to the peak
@@ -75,7 +75,7 @@ const ContactHeroPage = () => {
           <div className="h-full overflow-y-auto">
             <div className="p-12 ">
               <div className="w-full p-4 bg-secondaryBlack rounded-lg shadow sm:p-6 md:p-8">
-                <form class="space-y-6 " onSubmit={handleSubmit}>
+                <form className="space-y-6 " onSubmit={handleSubmit}>
                   <div>
                     <label
                       htmlFor="name"
@@ -97,8 +97,8 @@ const ContactHeroPage = () => {
 
                   <div>
                     <label
-                      for="email"
-                      class="block mb-2 text-sm font-medium text-white"
+                      htmlFor="email"
+                      className="block mb-2 text-sm font-medium text-white"
                     >
                       Email
                     </label>
@@ -108,7 +108,7 @@ const ContactHeroPage = () => {
                       id="email"
                       value={formData.email}
                       onChange={handleChange}
-                      class="bg-primaryBlack border text-white rounded-lg w-full border-none h-16"
+                      className="bg-primaryBlack border text-white rounded-lg w-full border-none h-16"
                       placeholder="name@company.com"
                       required
                     />
@@ -152,8 +152,8 @@ const ContactHeroPage = () => {
 
                   <div>
                     <label
-                      for="message"
-                      class="block mb-2 text-sm font-medium text-white"
+                      htmlFor="message"
+                      className="block mb-2 text-sm font-medium text-white"
                     >
                       Message
                     </label>
@@ -162,7 +162,7 @@ const ContactHeroPage = () => {
                       id="message"
                       value={formData.message}
                       onChange={handleChange}
-                      class="bg-primaryBlack border text-white  rounded-lg w-full border-none "
+                      className="bg-primaryBlack border text-white  rounded-lg w-full border-none "
                       rows="4"
                       placeholder="Type your message here..."
                       required
