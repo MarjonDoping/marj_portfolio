@@ -70,7 +70,7 @@ export const ThreeChip = ({ children }) => {
 
   return (
     <>
-      <span className="bg-chipsBlack text-xs font-medium me-2 p-3 rounded dark:bg-gray-700 dark:text-gray-300">
+      <span className="bg-chipsBlack text-xs font-medium me-2 p-3 rounded ">
         <span className="text-xs font-bold uppercase text-chipsText">
           {children}
         </span>

@@ -6,7 +6,12 @@ const Livepreview = () => {
   const [currentCategory, setCurrentCategory] = useState("All Projects"); // Default to "All Projects" category
 
   // Define categories
-  const categories = ["All Projects", "WEB DEVELOPMENT", "DESIGN", "REACT TAILWIND"];
+  const categories = [
+    "All Projects",
+    "WEB DEVELOPMENT",
+    "DESIGN",
+    "REACT TAILWIND",
+  ];
 
   // Sample data for cards
   const yourCardsData = [
@@ -14,30 +19,31 @@ const Livepreview = () => {
       id: 1,
       image: "/images/nft.png",
       title: "NFT Landing Page",
-      description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
-      categories: ["WEB DEVELOPMENT", "DESIGN", "REACT TAILWIND"]
+      description:
+        "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+      categories: ["WEB DEVELOPMENT", "DESIGN", "REACT TAILWIND"],
     },
     {
       id: 2,
       image: "/images/burger.png",
       title: "Burger Landing Page",
       description: "Description for burger landing page",
-      categories: ["WEB DEVELOPMENT", "DESIGN"]
+      categories: ["WEB DEVELOPMENT", "DESIGN"],
     },
     {
       id: 3,
       image: "/images/bike.png",
       title: "Bike Landing Page",
       description: "Description for bike landing page",
-      categories: ["WEB DEVELOPMENT"]
+      categories: ["WEB DEVELOPMENT"],
     },
     {
       id: 4,
       image: "/images/cars.png",
       title: "Car Landing Page",
       description: "Description for car landing page",
-      categories: ["DESIGN"]
-    }
+      categories: ["DESIGN"],
+    },
   ];
 
   // Function to handle category change
@@ -46,21 +52,26 @@ const Livepreview = () => {
   };
 
   // Filtered cards based on the current category
-  const filteredCards = currentCategory === "All Projects"
-    ? yourCardsData // Show All Projects cards if currentCategory is "All Projects"
-    : yourCardsData.filter(card => card.categories.includes(currentCategory));
+  const filteredCards =
+    currentCategory === "All Projects"
+      ? yourCardsData 
+      : yourCardsData.filter((card) =>
+          card.categories.includes(currentCategory)
+        );
 
   return (
     <div className="bg-cover bg-center bg-repeat bg-primaryBlack">
-      {/* Dropdown for filtering */}
-      <div className="flex  pt-6 max-w-screen-xl mx-auto px-12">
-      <select
-          className="  bg-primaryBlack rounded-lg  border-gray-700 text-gray-200 py-3 px-4 pr-8   focus:outline-none "
+
+      <div className="flex pt-6 max-w-screen-xl mx-auto px-12">
+        <select
+          className="  bg-primaryBlack rounded-lg border-gray-700 text-gray-200 "
           value={currentCategory}
           onChange={handleCategoryChange}
         >
           {categories.map((category, index) => (
-            <option key={index} value={category}>{category}</option>
+            <option key={index} value={category}>
+              {category}
+            </option>
           ))}
         </select>
       </div>
@@ -72,7 +83,10 @@ const Livepreview = () => {
       <div className="grid grid-cols-2 gap-8 max-w-screen-xl mx-auto py-12 px-12">
         {/* Cards */}
         {filteredCards.map((card) => (
-          <div className="custom-card bg-secondaryBlack border rounded-lg shadow " key={card.id}>
+          <div
+            className="custom-card bg-secondaryBlack border rounded-lg shadow "
+            key={card.id}
+          >
             <a href="#">
               <img className="rounded-t-lg" src={card.image} alt="" />
             </a>
@@ -83,11 +97,11 @@ const Livepreview = () => {
             </div>
             <div className="p-5">
               <a href="#">
-                <h5 className="mb-6 text-2xl tracking-tight text-gray-100 dark:text-white">
+                <h5 className="mb-6 text-2xl tracking-tight text-gray-100">
                   {card.title}
                 </h5>
               </a>
-              <p className="mb-6 font-normal text-gray-100 dark:text-gray-400">
+              <p className="mb-6 font-normal text-gray-100 ">
                 {card.description}
               </p>
               <NoGapButton>
