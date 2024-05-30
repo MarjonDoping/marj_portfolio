@@ -203,7 +203,7 @@ const NavBar = () => {
                 href="https://www.behance.net/marjondoping"
                 className="block py-6 px-6 text-white rounded hover:bg-gray-800 md:hover:bg-gray-900 md:border-0 md:hover:text-white md:p-2 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
-                FIGMA
+                WORKS
               </a>
             </li>
           </ul>

@@ -45,9 +45,9 @@ const ContactHeroPage = () => {
                 color: "transparent",
               }}
             >
-              Collaborate with me
+              Collaborate with me 
             </span>
-            and let's make your brand to the peak
+             {" "} and let's make your brand to the peak
             <p className=" mb-4 text-base text-white font-light sticky mt-4">
               Collaborate with me and let's make your brand to the peak
             </p>
@@ -162,7 +162,7 @@ const ContactHeroPage = () => {
                       id="message"
                       value={formData.message}
                       onChange={handleChange}
-                      className="bg-primaryBlack border text-white  rounded-lg w-full border-none "
+                      className="bg-primaryBlack border text-white  rounded-lg w-full border-none p-2 "
                       rows="4"
                       placeholder="Type your message here..."
                       required
@@ -183,7 +183,7 @@ const ContactHeroPage = () => {
               </div>
             </div>
             {/* Additional Card */}
-            <div className="px-12 rounded-lg">
+            <div className="p-12 rounded-lg">
               <div className="w-full p-4 bg-secondaryBlack shadow ">
                 <div className="grid grid-cols-2  gap-4 ">
                   {/* First Sub Card */}
