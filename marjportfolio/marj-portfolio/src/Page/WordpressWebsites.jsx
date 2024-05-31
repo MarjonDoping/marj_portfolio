@@ -50,7 +50,7 @@ const WordpressWebsite = () => {
       title: "LIVE CHAT FAIRIES",
       description:
         "We are your one-stop shop for all chat operator services. Live chat operator services in real-time assist you in providing immediate assistance via integrable messaging platforms.",
-      categories: ["WORDPRESS DEVELOPMENT", "OXYGEN"],
+      categories: ["WORDPRESS DEVELOPMENT", "ELEMENTOR"],
       link: "https://livechatfairies.com/",
     },
   ];

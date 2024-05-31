@@ -115,67 +115,74 @@ const NavBar = () => {
                   <div className="flex flex-row  max-w-screen-xl mx-auto items-center justify-between">
                     <div className="w-1/3 ">
                       <ul>
-                        <li className="flex py-3 text-xl  hover:text-violet-500 md:hover:underline md:border-0 md:p-2 dark:text-white ">
-                          <a href="/webDesign">WEB DESIGN</a>
-                        </li>
-                        <li className="flex py-3 text-xl  hover:text-violet-500 md:hover:underline md:border-0 md:p-2 dark:text-white ">
-                          <a href="/Wordpress">WORDPRESS DEVELOPMENT</a>
-                        </li>
-                        <li className="flex py-3 text-xl  hover:text-violet-500 md:hover:underline md:border-0 md:p-2 dark:text-white ">
-                          <a href="/graphicDesign">GRAPHIC DESIGN</a>
-                        </li>
-                        <li className="flex py-3 text-xl  hover:text-violet-500 md:hover:underline md:border-0 md:p-2 dark:text-white ">
-                          <a href="/graphicDesign">BRANDING AND SEO</a>
-                        </li>
-                       
+                        <Link to="/webDesign">
+                          {" "}
+                          <li className="flex py-3 text-xl  hover:text-violet-500 md:hover:underline md:border-0 md:p-2 dark:text-white ">
+                            WEB DESIGN
+                          </li>
+                        </Link>
+                        <Link to="/Wordpress">
+                          <li className="flex py-3 text-xl  hover:text-violet-500 md:hover:underline md:border-0 md:p-2 dark:text-white ">
+                            <a href="/Wordpress">WORDPRESS DEVELOPMENT</a>
+                          </li>
+                        </Link>
+                        <Link to="/graphic">
+                          <li className="flex py-3 text-xl  hover:text-violet-500 md:hover:underline md:border-0 md:p-2 dark:text-white ">
+                            <a href="/graphicDesign">GRAPHIC DESIGN</a>
+                          </li>
+                        </Link>
+                        <Link to="/branding">
+                          <li className="flex py-3 text-xl  hover:text-violet-500 md:hover:underline md:border-0 md:p-2 dark:text-white ">
+                            <a href="/graphicDesign">BRANDING AND SEO</a>
+                          </li>
+                        </Link>
                       </ul>
                     </div>
                     <div className="w-1/3 ">
                       <Link to="/contactPage">
-                      <p className="flex py-3 mr-8 mx-auto items-center justify-between">
-                        Collaborate with me
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          className="justify-center"
-                        >
-                          <path
-                            fillRule="evenodd"
-                            clipRule="evenodd"
-                            d="M13.4697 5.46967C13.7626 5.17678 14.2374 5.17678 14.5303 5.46967L20.5303 11.4697C20.8232 11.7626 20.8232 12.2374 20.5303 12.5303L14.5303 18.5303C14.2374 18.8232 13.7626 18.8232 13.4697 18.5303C13.1768 18.2374 13.1768 17.7626 13.4697 17.4697L18.1893 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H18.1893L13.4697 6.53033C13.1768 6.23744 13.1768 5.76256 13.4697 5.46967Z"
-                            fill="#F7B329"
-                          />
-                        </svg>
-                      </p>
+                        <p className="flex py-3 mr-8 mx-auto items-center justify-between">
+                          Collaborate with me
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            className="justify-center"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              clipRule="evenodd"
+                              d="M13.4697 5.46967C13.7626 5.17678 14.2374 5.17678 14.5303 5.46967L20.5303 11.4697C20.8232 11.7626 20.8232 12.2374 20.5303 12.5303L14.5303 18.5303C14.2374 18.8232 13.7626 18.8232 13.4697 18.5303C13.1768 18.2374 13.1768 17.7626 13.4697 17.4697L18.1893 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H18.1893L13.4697 6.53033C13.1768 6.23744 13.1768 5.76256 13.4697 5.46967Z"
+                              fill="#F7B329"
+                            />
+                          </svg>
+                        </p>
                       </Link>
-                     
+
                       <hr className="mr-8" />
 
                       <a href="https://www.behance.net/marjondoping">
-                      <p className="flex py-3 mr-8 mx-auto items-center justify-between">
-                        My Works
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          className="justify-center"
-                        >
-                          <path
-                            fillRule="evenodd"
-                            clipRule="evenodd"
-                            d="M13.4697 5.46967C13.7626 5.17678 14.2374 5.17678 14.5303 5.46967L20.5303 11.4697C20.8232 11.7626 20.8232 12.2374 20.5303 12.5303L14.5303 18.5303C14.2374 18.8232 13.7626 18.8232 13.4697 18.5303C13.1768 18.2374 13.1768 17.7626 13.4697 17.4697L18.1893 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H18.1893L13.4697 6.53033C13.1768 6.23744 13.1768 5.76256 13.4697 5.46967Z"
-                            fill="#F7B329"
-                          />
-                        </svg>
-                      </p>
-
+                        <p className="flex py-3 mr-8 mx-auto items-center justify-between">
+                          My Works
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            className="justify-center"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              clipRule="evenodd"
+                              d="M13.4697 5.46967C13.7626 5.17678 14.2374 5.17678 14.5303 5.46967L20.5303 11.4697C20.8232 11.7626 20.8232 12.2374 20.5303 12.5303L14.5303 18.5303C14.2374 18.8232 13.7626 18.8232 13.4697 18.5303C13.1768 18.2374 13.1768 17.7626 13.4697 17.4697L18.1893 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H18.1893L13.4697 6.53033C13.1768 6.23744 13.1768 5.76256 13.4697 5.46967Z"
+                              fill="#F7B329"
+                            />
+                          </svg>
+                        </p>
                       </a>
-                     
+
                       <hr className="mr-8" />
                       <p className="flex py-3 mr-8 mx-auto items-center justify-between">
                         Why use Figma for Web Design?
