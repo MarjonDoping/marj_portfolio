@@ -30,7 +30,7 @@ const Accordion = ({ title, children, cardContent }) => {
       </div>
       {isOpen && (
         <div className="bg-secondaryBlack">
-          <div className="p-4 border-b border-secondaryBlack text-white">
+          <div className=" border-b border-secondaryBlack text-white">
             {children}
           </div>
           <div className="p-4 border-b border-secondaryBlack text-white">
@@ -97,24 +97,25 @@ const WebdesignAccordion = () => {
           }
           cardContent={
             <div className="flex items-center">
-              <div className="w-1/2">
-                <img
-                  src="/images/navbarImg.png"
-                  alt="Image"
-                  className="w-full h-auto"
-                />
+              <div className="w-1/2 ml-8">
+                <p>
+                  By providing comprehensive, user-focused UX design services,
+                  The MD Creatives is dedicated to helping you create meaningful
+                  and engaging experiences for your users. <br />
+                  <br /> Let us be your partner in delivering designs that not
+                  only look great but also perform exceptionally well.
+                </p>
               </div>
-              <div className="w-1/2 ml-4">
-                <p>Text content goes here...</p>
-                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                  Button
-                </button>
+              <div className="w-1/2 ml-16">
+                <img
+                  src="/images/UX.png"
+                  alt="Image"
+                  className="w-full rounded-lg"
+                />
               </div>
             </div>
           }
-        >
-          <p>Content for section 1 goes here...</p>
-        </Accordion>
+        ></Accordion>
 
         <Accordion
           title={
@@ -138,24 +139,32 @@ const WebdesignAccordion = () => {
           }
           cardContent={
             <div className="flex items-center">
-              <div className="w-1/2">
-                <img
-                  src="/images/navbarImg.png"
-                  alt="Image"
-                  className="w-full h-auto"
-                />
+              <div className="w-1/2 ml-8">
+                <p>
+                  Our comprehensive UI design services include visual design,
+                  interactive elements, responsive design, and branding
+                  consistency, ensuring that every aspect of your interface is
+                  engaging and easy to navigate. <br />
+                  <br /> With a focus on aesthetics and usability, our
+                  experienced team collaborates closely with clients to create
+                  seamless and effective interfaces that captivate users and
+                  drive business success. <br />
+                  <br />
+                  Ready to enhance your UI? Contact us today to discuss your
+                  project and achieve your goals with our innovative design
+                  solutions.
+                </p>
               </div>
-              <div className="w-1/2 ml-4">
-                <p>Text content goes here...</p>
-                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                  Button
-                </button>
+              <div className="w-1/2 ml-16">
+                <img
+                  src="/images/UI.png"
+                  alt="Image"
+                  className="w-full rounded-lg"
+                />
               </div>
             </div>
           }
-        >
-          <p>Content for section 1 goes here...</p>
-        </Accordion>
+        ></Accordion>
 
         <Accordion
           title={
@@ -183,24 +192,30 @@ const WebdesignAccordion = () => {
           }
           cardContent={
             <div className="flex items-center">
-              <div className="w-1/2">
-                <img
-                  src="/images/navbarImg.png"
-                  alt="Image"
-                  className="w-full h-auto"
-                />
+              <div className="w-1/2 ml-8">
+                <p>
+                  My services include designing flexible layouts, adaptive
+                  visuals, and intuitive navigation that provide a seamless user
+                  experience on desktops, tablets, and smartphones. <br />{" "}
+                  <br /> With a focus on usability and aesthetics, our expert
+                  team collaborates closely with clients to develop designs that
+                  not only engage users but also drive business success by
+                  reaching audiences wherever they are. <br /> <br /> Ready to
+                  optimize your digital presence? Contact us today to discuss
+                  your project and achieve your goals with cutting-edge
+                  responsive design solutions.
+                </p>
               </div>
-              <div className="w-1/2 ml-4">
-                <p>Text content goes here...</p>
-                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                  Button
-                </button>
+              <div className="w-1/2 ml-16">
+                <img
+                  src="/images/Responsive.png"
+                  alt="Image"
+                  className="w-full rounded-lg"
+                />
               </div>
             </div>
           }
-        >
-          <p>Content for section 1 goes here...</p>
-        </Accordion>
+        ></Accordion>
 
         <Accordion
           title={
@@ -224,24 +239,25 @@ const WebdesignAccordion = () => {
           }
           cardContent={
             <div className="flex items-center">
-              <div className="w-1/2">
-                <img
-                  src="/images/navbarImg.png"
-                  alt="Image"
-                  className="w-full h-auto"
-                />
+              <div className="w-1/2 ml-8">
+                <p>
+                  By providing comprehensive, user-focused UX design services,
+                  The MD Creatives is dedicated to helping you create meaningful
+                  and engaging experiences for your users. <br />
+                  <br /> Let us be your partner in delivering designs that not
+                  only look great but also perform exceptionally well.
+                </p>
               </div>
-              <div className="w-1/2 ml-4">
-                <p>Text content goes here...</p>
-                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                  Button
-                </button>
+              <div className="w-1/2 ml-16">
+                <img
+                  src="/images/prototyping.png"
+                  alt="Image"
+                  className="w-full rounded-lg"
+                />
               </div>
             </div>
           }
-        >
-          <p>Content for section 1 goes here...</p>
-        </Accordion>
+        ></Accordion>
 
         <Accordion
           title={
@@ -265,24 +281,31 @@ const WebdesignAccordion = () => {
           }
           cardContent={
             <div className="flex items-center">
-              <div className="w-1/2">
-                <img
-                  src="/images/navbarImg.png"
-                  alt="Image"
-                  className="w-full h-auto"
-                />
+              <div className="w-1/2 ml-8">
+                <p>
+                  Transform your ideas into reality with my professional mockup
+                  and wireframing services. As an expert designer, I create
+                  everything from low to high-fidelity wireframes and static to
+                  interactive mockups, providing clear and visually appealing
+                  representations of your project. <br /> <br />With a user-centric approach
+                  and customized solutions, I ensure your design is intuitive
+                  and engaging. From initial consultation to final delivery, my
+                  streamlined process guarantees efficient, high-quality results
+                  tailored to meet your specific needs. <br /><br /> Let me bring your vision
+                  to life and ensure a seamless user experience across all
+                  devices with my dedicated mockup and wireframing expertise.
+                </p>
               </div>
-              <div className="w-1/2 ml-4">
-                <p>Text content goes here...</p>
-                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                  Button
-                </button>
+              <div className="w-1/2 ml-16">
+                <img
+                  src="/images/mockup.png"
+                  alt="Image"
+                  className="w-full rounded-lg"
+                />
               </div>
             </div>
           }
-        >
-          <p>Content for section 1 goes here...</p>
-        </Accordion>
+        ></Accordion>
       </div>
     </div>
   );

@@ -78,3 +78,18 @@ export const ThreeChip = ({ children }) => {
     </>
   );
 };
+
+export const FourChip = ({ children }) => {
+  const gradientCustom =
+    "linear-gradient(219deg, #9DE8EE -10.9%, #1A6350 -10.88%, #F829AD 43.45%, #FBF1A0 100%)";
+
+  return (
+    <>
+      <span className="bg-white text-xs font-medium me-2 p-3 rounded shadow ">
+        <span className="text-xs font-bold uppercase text-primaryBlack">
+          {children}
+        </span>
+      </span>
+    </>
+  );
+};

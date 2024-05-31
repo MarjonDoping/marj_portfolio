@@ -116,20 +116,22 @@ const NavBar = () => {
                     <div className="w-1/3 ">
                       <ul>
                         <li className="flex py-3 text-xl  hover:text-violet-500 md:hover:underline md:border-0 md:p-2 dark:text-white ">
-                          <a href="#">WEB DESIGN</a>
+                          <a href="/webDesign">WEB DESIGN</a>
                         </li>
                         <li className="flex py-3 text-xl  hover:text-violet-500 md:hover:underline md:border-0 md:p-2 dark:text-white ">
-                          <a href="#">GRAPHIC DESIGN</a>
+                          <a href="/Wordpress">WORDPRESS DEVELOPMENT</a>
                         </li>
                         <li className="flex py-3 text-xl  hover:text-violet-500 md:hover:underline md:border-0 md:p-2 dark:text-white ">
-                          <a href="#">WORDPRESS DEVELOPMENT</a>
+                          <a href="/graphicDesign">GRAPHIC DESIGN</a>
                         </li>
-                        <li className="flex    py-3 text-xl  hover:text-violet-500 md:hover:underline md:border-0 md:p-2 dark:text-white ">
-                          <a href="#">BRANDING</a>
+                        <li className="flex py-3 text-xl  hover:text-violet-500 md:hover:underline md:border-0 md:p-2 dark:text-white ">
+                          <a href="/graphicDesign">BRANDING AND SEO</a>
                         </li>
+                       
                       </ul>
                     </div>
                     <div className="w-1/3 ">
+                      <Link to="/contactPage">
                       <p className="flex py-3 mr-8 mx-auto items-center justify-between">
                         Collaborate with me
                         <svg
@@ -148,7 +150,11 @@ const NavBar = () => {
                           />
                         </svg>
                       </p>
+                      </Link>
+                     
                       <hr className="mr-8" />
+
+                      <a href="https://www.behance.net/marjondoping">
                       <p className="flex py-3 mr-8 mx-auto items-center justify-between">
                         My Works
                         <svg
@@ -167,6 +173,9 @@ const NavBar = () => {
                           />
                         </svg>
                       </p>
+
+                      </a>
+                     
                       <hr className="mr-8" />
                       <p className="flex py-3 mr-8 mx-auto items-center justify-between">
                         Why use Figma for Web Design?
