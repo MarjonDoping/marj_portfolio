@@ -21,7 +21,7 @@ const Livepreview = () => {
       title: "Banking Landing Page",
       description: "Discover a range of personalized banking solutions tailored to meet your needs, from  accounts to loans opportunities.",
       categories: ["WEB DEVELOPMENT", "DESIGN" ,"FIGMA"],
-      link: "https://www.behance.net/gallery/193957543/Car-landing-Page"
+      link: "https://www.behance.net/gallery/196307891/Bank-Landing-Page"
     },
 
    
