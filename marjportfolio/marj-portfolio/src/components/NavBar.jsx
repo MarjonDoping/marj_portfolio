@@ -1,12 +1,26 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect, useRef } from "react";
+import { Link, NavLink } from "react-router-dom";
 
 const NavBar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const dropdownRef = useRef(null);
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
+
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setIsDropdownOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   const cvDownloadLink =
     "https://drive.google.com/file/d/19RqO1dngjqo3n-MvCT0rmW3rHGFOhwgp/view?usp=drive_link";
@@ -19,7 +33,7 @@ const NavBar = () => {
     <nav className="bg-black border-black sticky top-0 z-50">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <span className="self-center flex items-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+          <span className="self-center flex items-center text-2xl font-semibold whitespace-nowrap ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="45"
@@ -55,7 +69,7 @@ const NavBar = () => {
         <button
           data-collapse-toggle="navbar-default"
           type="button"
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          className="inline-flex bg-gray-500 items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
           aria-controls="navbar-default"
           aria-expanded="false"
         >
@@ -89,7 +103,7 @@ const NavBar = () => {
                 PORTFOLIO
               </Link>
             </li>
-            <li>
+            <li ref={dropdownRef}>
               <button
                 onClick={toggleDropdown}
                 className="flex justify-center items-center py-2 px-3  text-white rounded hover:bg-gray-800 md:hover:bg-gray-800 md:border-0  dark:text-w md:dark:hover:text-whitemd:dark:hover:bg-transparent"
@@ -111,34 +125,33 @@ const NavBar = () => {
                 </svg>
               </button>
               {isDropdownOpen && (
-                <div className="fixed justify-center top-16 left-0 w-full  bg-primaryBlack text-white py-12 px-3 mt-1 rounded shadow-lg z-50">
-                  <div className="flex flex-row  max-w-screen-xl mx-auto items-center justify-between">
-                    <div className="w-1/3 ">
+                <div className="fixed justify-center top-16 left-0 w-full bg-primaryBlack text-white py-12 px-3 mt-1 rounded shadow-lg z-50">
+                  <div className="flex flex-row max-w-screen-xl mx-auto items-center justify-between">
+                    <div className="w-1/3">
                       <ul>
                         <Link to="/webDesign">
-                          {" "}
-                          <li className="flex py-3 text-xl  hover:text-violet-500 md:hover:underline md:border-0 md:p-2 dark:text-white ">
+                          <li className="flex py-3 text-xl hover:text-violet-500 md:hover:underline md:border-0 md:p-2 ">
                             WEB DESIGN
                           </li>
                         </Link>
                         <Link to="/Wordpress">
-                          <li className="flex py-3 text-xl  hover:text-violet-500 md:hover:underline md:border-0 md:p-2 dark:text-white ">
-                            <a href="/Wordpress">WORDPRESS DEVELOPMENT</a>
+                          <li className="flex py-3 text-xl hover:text-violet-500 md:hover:underline md:border-0 md:p-2 ">
+                            WORDPRESS DEVELOPMENT
                           </li>
                         </Link>
                         <Link to="/graphic">
-                          <li className="flex py-3 text-xl  hover:text-violet-500 md:hover:underline md:border-0 md:p-2 dark:text-white ">
-                            <a href="/graphicDesign">GRAPHIC DESIGN</a>
+                          <li className="flex py-3 text-xl hover:text-violet-500 md:hover:underline md:border-0 md:p-2 ">
+                            GRAPHIC DESIGN
                           </li>
                         </Link>
                         <Link to="/branding">
-                          <li className="flex py-3 text-xl  hover:text-violet-500 md:hover:underline md:border-0 md:p-2 dark:text-white ">
-                            <a href="/graphicDesign">BRANDING AND SEO</a>
+                          <li className="flex py-3 text-xl hover:text-violet-500 md:hover:underline md:border-0 md:p-2 ">
+                            BRANDING AND SEO
                           </li>
                         </Link>
                       </ul>
                     </div>
-                    <div className="w-1/3 ">
+                    <div className="w-1/3">
                       <Link to="/contactPage">
                         <p className="flex py-3 mr-8 mx-auto items-center justify-between">
                           Collaborate with me
@@ -217,7 +230,7 @@ const NavBar = () => {
             <li>
               <a
                 href="https://www.behance.net/marjondoping"
-                className="block py-6 px-6 text-white rounded hover:bg-gray-800 md:hover:bg-gray-900 md:border-0 md:hover:text-white md:p-2 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block py-6 px-6 text-white rounded hover:bg-gray-800 md:hover:bg-gray-900 md:border-0 md:hover:text-white md:p-2 "
               >
                 WORKS
               </a>
