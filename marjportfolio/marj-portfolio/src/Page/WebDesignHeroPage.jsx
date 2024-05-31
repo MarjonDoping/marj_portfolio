@@ -15,7 +15,7 @@ const WebDesignHeroPage = () => {
     <div className="bg-black">
       <div
         className="flex max-w-screen-xl flex-wrap justify-center items-center bg-cover bg-black bg-center mx-auto  font-plus jakarta sans "
-        style={{ backgroundImage: `url(/images/bg1.png)` }}
+        style={{ backgroundImage: `url(/images/bg1.webp)` }}
       >
         {/* Left Column */}
         <div className="w-1/2  pl-100">
@@ -41,12 +41,12 @@ const WebDesignHeroPage = () => {
           <br />
 
           <img
-            src="/images/Multiplayer1.png"
+            src="/images/Multiplayer1.webp"
             alt="Background"
             className="absolute inset-60 object-cover h-12 opacity-100 animate-move"
           />
           <div className="flex px-3 py-3 ">
-            <img src="/images/Figma.png" alt="Image 1" className="w-16 h-16 " />
+            <img src="/images/Figma.webp" alt="Image 1" className="w-16 h-16 " />
           </div>
           <span className="flex px-7 text-gray-200">
             Figma Web Designs
@@ -72,7 +72,7 @@ const WebDesignHeroPage = () => {
         <div className="w-1/2 " style={gradientStyle}>
           <div className="py-48 ">
             <img
-              src="/images/heroImage.png"
+              src="/images/heroImage.webp"
               alt="Hero Image"
               className="w-3/4 h-auto "
             />

@@ -9,54 +9,54 @@ import { Link } from "react-router-dom";
 
 const WorksPage = () => {
   const topPartners = [
-    { src: "/images/banking.png", alt: "Top Partner 1" },
-    { src: "/images/bike.png", alt: "Top Partner 2" },
-    { src: "/images/rhu.png", alt: "Top Partner 3" },
-    { src: "/images/nft.png", alt: "Top Partner 1" },
-    { src: "/images/cozy.png", alt: "Top Partner 2" },
-    { src: "/images/bike.png", alt: "Top Partner 2" },
-    { src: "/images/rhu.png", alt: "Top Partner 3" },
-    { src: "/images/banking.png", alt: "Top Partner 1" },
-    { src: "/images/cozy.png", alt: "Top Partner 2" },
-    { src: "/images/bike.png", alt: "Top Partner 2" },
-    { src: "/images/nft.png", alt: "Top Partner 3" },
+    { src: "/images/banking.webp", alt: "Top Partner 1" },
+    { src: "/images/bike.webp", alt: "Top Partner 2" },
+    { src: "/images/rhu.webp", alt: "Top Partner 3" },
+    { src: "/images/nft.webp", alt: "Top Partner 1" },
+    { src: "/images/cozy.webp", alt: "Top Partner 2" },
+    { src: "/images/bike.webp", alt: "Top Partner 2" },
+    { src: "/images/rhu.webp", alt: "Top Partner 3" },
+    { src: "/images/banking.webp", alt: "Top Partner 1" },
+    { src: "/images/cozy.webp", alt: "Top Partner 2" },
+    { src: "/images/bike.webp", alt: "Top Partner 2" },
+    { src: "/images/nft.webp", alt: "Top Partner 3" },
   ];
 
   const bottomPartners = [
-    { src: "/images/burgers.png", alt: "Bottom Partner 1" },
-    { src: "/images/banking1.png", alt: "Bottom Partner 2" },
-    { src: "/images/ebikes.png", alt: "Bottom Partner 1" },
-    { src: "/images/banking1.png", alt: "Bottom Partner 2" },
-    { src: "/images/burgers.png", alt: "Bottom Partner 1" },
-    { src: "/images/banking1.png", alt: "Bottom Partner 2" },
-    { src: "/images/burgers.png", alt: "Bottom Partner 1" },
-    { src: "/images/ebikes.png", alt: "Bottom Partner 1" },
-    { src: "/images/banking1.png", alt: "Bottom Partner 2" },
-    { src: "/images/ebikes.png", alt: "Bottom Partner 1" },
-    { src: "/images/banking1.png", alt: "Bottom Partner 2" },
-    { src: "/images/burgers.png", alt: "Bottom Partner 1" },
-    { src: "/images/ebikes.png", alt: "Bottom Partner 1" },
+    { src: "/images/burgers.webp", alt: "Bottom Partner 1" },
+    { src: "/images/banking1.webp", alt: "Bottom Partner 2" },
+    { src: "/images/ebikes.webp", alt: "Bottom Partner 1" },
+    { src: "/images/banking1.webp", alt: "Bottom Partner 2" },
+    { src: "/images/burgers.webp", alt: "Bottom Partner 1" },
+    { src: "/images/banking1.webp", alt: "Bottom Partner 2" },
+    { src: "/images/burgers.webp", alt: "Bottom Partner 1" },
+    { src: "/images/ebikes.webp", alt: "Bottom Partner 1" },
+    { src: "/images/banking1.webp", alt: "Bottom Partner 2" },
+    { src: "/images/ebikes.webp", alt: "Bottom Partner 1" },
+    { src: "/images/banking1.webp", alt: "Bottom Partner 2" },
+    { src: "/images/burgers.webp", alt: "Bottom Partner 1" },
+    { src: "/images/ebikes.webp", alt: "Bottom Partner 1" },
   ];
 
   const endPartners = [
-    { src: "/images/superare.png", alt: "Top Partner 1" },
-    { src: "/images/blucar.png", alt: "Top Partner 2" },
-    { src: "/images/ebike.png", alt: "Top Partner 3" },
-    { src: "/images/superare.png", alt: "Top Partner 1" },
-    { src: "/images/blucar.png", alt: "Top Partner 2" },
-    { src: "/images/ebike.png", alt: "Top Partner 3" },
-    { src: "/images/superare.png", alt: "Top Partner 1" },
-    { src: "/images/blucar.png", alt: "Top Partner 2" },
-    { src: "/images/ebike.png", alt: "Top Partner 3" },
-    { src: "/images/superare.png", alt: "Top Partner 1" },
-    { src: "/images/blucar.png", alt: "Top Partner 2" },
+    { src: "/images/superare.webp", alt: "Top Partner 1" },
+    { src: "/images/blucar.webp", alt: "Top Partner 2" },
+    { src: "/images/ebike.webp", alt: "Top Partner 3" },
+    { src: "/images/superare.webp", alt: "Top Partner 1" },
+    { src: "/images/blucar.webp", alt: "Top Partner 2" },
+    { src: "/images/ebike.webp", alt: "Top Partner 3" },
+    { src: "/images/superare.webp", alt: "Top Partner 1" },
+    { src: "/images/blucar.webp", alt: "Top Partner 2" },
+    { src: "/images/ebike.webp", alt: "Top Partner 3" },
+    { src: "/images/superare.webp", alt: "Top Partner 1" },
+    { src: "/images/blucar.webp", alt: "Top Partner 2" },
   ];
 
   return (
     <div className="relative">
       {/* Absolute image covering the page */}
       <img
-        src="/images/absolute.png"
+        src="/images/absolute.webp"
         alt="Absolute Image"
         className="absolute inset-0 w-full h-full object-cover z-50"
       />

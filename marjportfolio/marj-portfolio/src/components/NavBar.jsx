@@ -198,7 +198,7 @@ const NavBar = () => {
                     </div>
                     <div className="w-1/3">
                       <img
-                        src="/images/navbarImg.png"
+                        src="/images/navbarImg.webp"
                         alt="Image 1"
                         className="w-auto"
                       />

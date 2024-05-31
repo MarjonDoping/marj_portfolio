@@ -52,7 +52,7 @@ const CarouselPage = () => {
     <>
       <div
         className="bg-cover bg-center py-24"
-        style={{ backgroundImage: 'url("/images/background.png")' }}
+        style={{ backgroundImage: 'url("/images/background.webp")' }}
       >
         <div className="max-w-screen-xl mx-auto px-5">
          
@@ -101,10 +101,10 @@ const CarouselPage = () => {
                 itemID={1}
                 className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
                 style={{ padding: "0 200px" }}
-                onClick={() => handleImageClick("/images/bank-dark mode.png")}
+                onClick={() => handleImageClick("/images/bank-dark mode.webp")}
               >
                 <img
-                  src="/images/rebank.png"
+                  src="/images/rebank.webp"
                   className="block w-full"
                   alt="..."
                 />
@@ -113,10 +113,10 @@ const CarouselPage = () => {
                 itemID={2}
                 className="relative float-left hidden -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
                 style={{ padding: "0 200px" }}
-                onClick={() => handleImageClick("/images/CARS2.png")}
+                onClick={() => handleImageClick("/images/CARS2.webp")}
               >
                 <img
-                  src="/images/cars.png"
+                  src="/images/cars.webp"
                   className="block w-full"
                   alt="..."
                 />
@@ -125,19 +125,19 @@ const CarouselPage = () => {
                 itemID={3}
                 className="relative float-left hidden -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
                 style={{ padding: "0 200px" }}
-                onClick={() => handleImageClick("/images/NFT MARJ.png")}
+                onClick={() => handleImageClick("/images/NFT MARJ.webp")}
               >
-                <img src="/images/nft.png" className="block w-full" alt="..." />
+                <img src="/images/nft.webp" className="block w-full" alt="..." />
               </TECarouselItem>
               {/* Additional Carousel Items */}
               <TECarouselItem
                 itemID={4}
                 className="relative float-left hidden -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
                 style={{ padding: "0 200px" }}
-                onClick={() => handleImageClick("/images/BURGER 1.png")}
+                onClick={() => handleImageClick("/images/BURGER 1.webp")}
               >
                 <img
-                  src="/images/burger.png"
+                  src="/images/burger.webp"
                   className="block w-full"
                   alt="..."
                 />
@@ -146,10 +146,10 @@ const CarouselPage = () => {
                 itemID={5}
                 className="relative float-left hidden -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
                 style={{ padding: "0 200px" }}
-                onClick={() => handleImageClick("/images/Marj -Bike.png")}
+                onClick={() => handleImageClick("/images/Marj -Bike.webp")}
               >
                 <img
-                  src="/images/bike.png"
+                  src="/images/bike.webp"
                   className="block w-full"
                   alt="..."
                 />
@@ -158,10 +158,10 @@ const CarouselPage = () => {
                 itemID={6}
                 className="relative float-left hidden -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
                 style={{ padding: "0 200px" }}
-                onClick={() => handleImageClick("/images/Marj-cozy.png")}
+                onClick={() => handleImageClick("/images/Marj-cozy.webp")}
               >
                 <img
-                  src="/images/cozy.png"
+                  src="/images/cozy.webp"
                   className="block w-full"
                   alt="..."
                 />

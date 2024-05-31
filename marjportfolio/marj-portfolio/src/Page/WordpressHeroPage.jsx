@@ -10,7 +10,7 @@ const gradientStyleblue = {
 const WordpressHeroPage = () => {
   return (
     <div className="bg-black">
-    <div className="flex max-w-screen-xl flex-wrap justify-center items-center bg-cover bg-black bg-center mx-auto  font-plus jakarta sans " style={{ backgroundImage: `url(/images/bg1.png)` }}>
+    <div className="flex max-w-screen-xl flex-wrap justify-center items-center bg-cover bg-black bg-center mx-auto  font-plus jakarta sans " style={{ backgroundImage: `url(/images/bg1.webp)` }}>
       {/* Left Column */}
       <div className="w-1/2  pl-100">
         <div className="px-8">
@@ -30,13 +30,13 @@ const WordpressHeroPage = () => {
         <br />
         
         <img
-          src="/images/Multiplayer1.png"
+          src="/images/Multiplayer1.webp"
           alt="Background"
           className="absolute inset-60 object-cover h-12 opacity-100 animate-move"
       />
         <div className="flex px-7 py-6 ">
           <img
-            src="/images/WordPress logo.png"
+            src="/images/WordPress logo.webp"
             alt="Image 1"
             className="w-16 h-16 "
           />
@@ -55,7 +55,7 @@ const WordpressHeroPage = () => {
       {/* Right Column */}
       <div className="w-1/2 " style={gradientStyleblue}>
         <div className="py-48 ">
-        <img src="/images/wordpressblue.png" alt="Hero Image" className="w-3/4 h-auto " />
+        <img src="/images/wordpressblue.webp" alt="Hero Image" className="w-3/4 h-auto " />
        
         </div>
         

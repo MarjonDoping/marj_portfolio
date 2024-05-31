@@ -20,17 +20,17 @@ function PartnersLogos() {
 }
 
 const partners = [
-  { src: '/images/logo1.png', alt: 'Partner 1' },
-  { src:'/images/logo2.png', alt: 'Partner 2' },
-  { src: '/images/logo3.png', alt: 'Partner 3' },
-  { src: '/images/logo4.png', alt: 'Partner 4' },
-  { src: '/images/logo5.png', alt: 'Partner 5' },
-  { src: '/images/logo6.png', alt: 'Partner 6' },
-  { src: '/images/logo7.png', alt: 'Partner 7' },
-  { src: '/images/logo8.png', alt: 'Partner 8' },
-  { src: '/images/logo1.png', alt: 'Partner 9' },
-  { src: '/images/logo10.png', alt: 'Partner 10' },
-  { src: '/images/logo11.png', alt: 'Partner 11' },
+  { src: '/images/logo1.webp', alt: 'Partner 1' },
+  { src:'/images/logo2.webp', alt: 'Partner 2' },
+  { src: '/images/logo3.webp', alt: 'Partner 3' },
+  { src: '/images/logo4.webp', alt: 'Partner 4' },
+  { src: '/images/logo5.webp', alt: 'Partner 5' },
+  { src: '/images/logo6.webp', alt: 'Partner 6' },
+  { src: '/images/logo7.webp', alt: 'Partner 7' },
+  { src: '/images/logo8.webp', alt: 'Partner 8' },
+  { src: '/images/logo1.webp', alt: 'Partner 9' },
+  { src: '/images/logo10.webp', alt: 'Partner 10' },
+  { src: '/images/logo11.webp', alt: 'Partner 11' },
 ];
 
 export default PartnersLogos;

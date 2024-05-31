@@ -11,11 +11,11 @@ const HeroPage = () => {
   return (
     <div
       className=" font-jakarta flex items-center justify-center h-screen bg-cover bg-center font-plus jakarta sans"
-      style={{ backgroundImage: `url(/images/bg.png)` }}
+      style={{ backgroundImage: `url(/images/bg.webp)` }}
     >
       <div className="text-white text-center font-jakarta">
         <img
-          src="/images/Multiplayer1.png"
+          src="/images/Multiplayer1.webp"
           alt="Background"
           className="absolute inset-60 object-cover h-12 opacity-100 animate-move"
         />
@@ -39,7 +39,7 @@ const HeroPage = () => {
           </h1>
         </div>
         <img
-          src="/images/Multiplayer.png"
+          src="/images/Multiplayer.webp"
           alt="Background"
           className="absolute inset-105 object-cover h-12 opacity-100 animate-slide-out-right"
         />
@@ -48,12 +48,12 @@ const HeroPage = () => {
 
         <div className="flex items-center justify-center">
           <img
-            src="/images/Figma.png"
+            src="/images/Figma.webp"
             alt="Image 1"
             className="w-16 h-16 mr-4"
           />
           <img
-            src="/images/WordPress logo.png"
+            src="/images/WordPress logo.webp"
             alt="Image 2"
             className="w-16 h-16"
           />

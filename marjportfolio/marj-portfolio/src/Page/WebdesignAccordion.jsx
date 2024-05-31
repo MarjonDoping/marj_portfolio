@@ -108,7 +108,7 @@ const WebdesignAccordion = () => {
               </div>
               <div className="w-1/2 ml-16">
                 <img
-                  src="/images/UX.png"
+                  src="/images/UX.webp"
                   alt="Image"
                   className="w-full rounded-lg"
                 />
@@ -157,7 +157,7 @@ const WebdesignAccordion = () => {
               </div>
               <div className="w-1/2 ml-16">
                 <img
-                  src="/images/UI.png"
+                  src="/images/UI.webp"
                   alt="Image"
                   className="w-full rounded-lg"
                 />
@@ -208,7 +208,7 @@ const WebdesignAccordion = () => {
               </div>
               <div className="w-1/2 ml-16">
                 <img
-                  src="/images/Responsive.png"
+                  src="/images/Responsive.webp"
                   alt="Image"
                   className="w-full rounded-lg"
                 />
@@ -250,7 +250,7 @@ const WebdesignAccordion = () => {
               </div>
               <div className="w-1/2 ml-16">
                 <img
-                  src="/images/prototyping.png"
+                  src="/images/prototyping.webp"
                   alt="Image"
                   className="w-full rounded-lg"
                 />
@@ -298,7 +298,7 @@ const WebdesignAccordion = () => {
               </div>
               <div className="w-1/2 ml-16">
                 <img
-                  src="/images/mockup.png"
+                  src="/images/mockup.webp"
                   alt="Image"
                   className="w-full rounded-lg"
                 />

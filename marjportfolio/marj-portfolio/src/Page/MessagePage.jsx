@@ -6,7 +6,7 @@ const MessagePage = () => {
    
      
       <div   className="bg-cover bg-center py-24" style=
-      {{ backgroundImage: 'url("/images/bg2.png")' }}>
+      {{ backgroundImage: 'url("/images/bg2.webp")' }}>
     
         <div className="max-w-screen-xl mx-auto p-4">
           <div className="flex items-center justify-between">

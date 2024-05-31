@@ -17,7 +17,7 @@ const Livepreview = () => {
   const yourCardsData = [
     {
       id: 1,
-      image: "/images/banking.png",
+      image: "/images/banking.webp",
       title: "Banking Landing Page",
       description: "Discover a range of personalized banking solutions tailored to meet your needs, from  accounts to loans opportunities.",
       categories: ["WEB DEVELOPMENT", "DESIGN" ,"FIGMA"],
@@ -27,7 +27,7 @@ const Livepreview = () => {
    
     {
       id: 2,
-      image: "/images/marj-ai2.png",
+      image: "/images/marj-ai2.webp",
       title: "Smart AI Landing Page",
       description: "Our cutting-edge artificial intelligence solutions empower businesses to transform data into actionable insights, streamline operations.",
       categories: ["WEB DEVELOPMENT", "DESIGN" ,"FIGMA"],
@@ -36,7 +36,7 @@ const Livepreview = () => {
 
     {
       id: 3,
-      image: "/images/Marj-Ai.png",
+      image: "/images/Marj-Ai.webp",
       title: "Smart AI landing Page (Light)",
       description: "Explore our suite of AI-powered tools designed to enhance productivity, improve decision-making",
       categories: [ "DESIGN" ,"FIGMA"],
@@ -44,7 +44,7 @@ const Livepreview = () => {
     },
     {
       id: 4,
-      image: "/images/bike.png",
+      image: "/images/bike.webp",
       title: "Bike Landing Page",
       description: "Explore our collection of high-performance, durable, and stylish bikes, crafted to deliver an exceptional riding experience.",
       categories: ["WEB DEVELOPMENT", "DESIGN" ,"FIGMA"],
@@ -52,7 +52,7 @@ const Livepreview = () => {
     },
     {
       id: 5,
-      image: "/images/nft.png",
+      image: "/images/nft.webp",
       title: "NFT Landing Page",
       description:
         "Discover, buy, and sell NFTs from a diverse range of artists and creators, all secured on the blockchain.",
@@ -61,7 +61,7 @@ const Livepreview = () => {
     },
     {
       id: 6,
-      image: "/images/burger.png",
+      image: "/images/burger.webp",
       title: "Burger Landing Page",
       description: "Whether you crave classic cheeseburgers or adventurous gourmet creations, we have something to satisfy every palate.",
       categories: ["WEB DEVELOPMENT", "DESIGN"],
@@ -69,7 +69,7 @@ const Livepreview = () => {
     },
     {
       id: 7,
-      image: "/images/Recycle.png",
+      image: "/images/Recycle.webp",
       title: "Recycle Landing Page",
       description: "Discover our comprehensive recycling services, learn how to recycle various materials, and find tips on living a more eco-friendly lifestyle.",
       categories: ["WEB DEVELOPMENT", "DESIGN"],
@@ -78,7 +78,7 @@ const Livepreview = () => {
    
     {
       id: 8,
-      image: "/images/rhu.png",
+      image: "/images/rhu.webp",
       title: "RHU Landing Page",
       description: "Explore our state-of-the-art facilities, comprehensive medical services, and patient-centered approach. Your health and well-being are our top priorities.",
       categories: ["WEB DEVELOPMENT", "DESIGN"],
@@ -87,7 +87,7 @@ const Livepreview = () => {
 
     {
       id: 9,
-      image: "/images/cletos.png",
+      image: "/images/cletos.webp",
       title: "Bakeshop Landing Page",
       description: "Indulge in our freshly baked goods, crafted with love and the finest ingredients. From decadent cakes and pastries to artisan bread and cookies.",
       categories: ["WEB DEVELOPMENT", "DESIGN"],
@@ -95,7 +95,7 @@ const Livepreview = () => {
     },
     {
       id: 10,
-      image: "/images/sales.png",
+      image: "/images/sales.webp",
       title: "E-commerce Landing Page",
       description: "rom decadent cakes and pastries to artisan bread and cookies, our delightful creations are perfect for any occasion",
       categories: ["DESIGN"],

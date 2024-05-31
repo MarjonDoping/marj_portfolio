@@ -1,6 +1,6 @@
 import React from "react";
-// import company1 from '/images/logoipsum.png';
-// import company2 from '/images/logoipsum.png';
+// import company1 from '/images/logoipsum.webp';
+// import company2 from '/images/logoipsum.webp';
 
 const Partners = () => {
   return (

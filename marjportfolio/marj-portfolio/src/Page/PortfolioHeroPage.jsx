@@ -11,11 +11,11 @@ const PortfolioHeroPage = () => {
     <div className="bg-black">
       <div
         className="flex max-w-screen-xl flex-wrap py-24 bg-cover bg-black bg-center mx-auto font-plus jakarta sans "
-        style={{ backgroundImage: `url(/images/bg1.png)` }}
+        style={{ backgroundImage: `url(/images/bg1.webp)` }}
       >
         {/* Left Column */}
         <div className="w-1/2 pl-100">
-          {/* <img src="/images/Multiplayer1.png" alt="Background" className="absolute inset-40 object-cover h-12 opacity-100 animate-move" /> */}
+          {/* <img src="/images/Multiplayer1.webp" alt="Background" className="absolute inset-40 object-cover h-12 opacity-100 animate-move" /> */}
           <div className="px-8">
             <h1 className="text-mh1 items-center text-white font-bold mb-4 leading-none">
               Let's{" "}

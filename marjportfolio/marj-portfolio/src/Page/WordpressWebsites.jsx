@@ -17,7 +17,7 @@ const WordpressWebsite = () => {
   const yourCardsData = [
     {
       id: 1,
-      image: "/images/NMS.png",
+      image: "/images/NMS.webp",
       title: "NEW MEDIA SERVICES",
       description:
         "New Media Services offers outsourced business services utilizing the collaboration of human and AI outsourcing solutions to upgrade your services and day-to-day operations.",
@@ -27,7 +27,7 @@ const WordpressWebsite = () => {
 
     {
       id: 2,
-      image: "/images/CHEKKEE.png",
+      image: "/images/CHEKKEE.webp",
       title: "CHEKKEE",
       description:
         "Providing real-time human and AI-powered content moderation solutions for all kinds of online platforms.",
@@ -37,7 +37,7 @@ const WordpressWebsite = () => {
 
     {
       id: 3,
-      image: "/images/supporttxt.png",
+      image: "/images/supporttxt.webp",
       title: "SUPPORTTXT",
       description:
         "Share stories about members of your community and their accomplishments, challenges, and experiences.",
@@ -46,7 +46,7 @@ const WordpressWebsite = () => {
     },
     {
       id: 4,
-      image: "/images/LCF.png",
+      image: "/images/LCF.webp",
       title: "LIVE CHAT FAIRIES",
       description:
         "We are your one-stop shop for all chat operator services. Live chat operator services in real-time assist you in providing immediate assistance via integrable messaging platforms.",

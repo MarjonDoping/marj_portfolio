@@ -190,7 +190,7 @@ const ContactHeroPage = () => {
                   <div className=" custom-card ">
                     <img
                       className="h-50 w-full rounded-lg"
-                      src="/images/00.png"
+                      src="/images/00.webp"
                       alt="Background Image 1"
                     />
 
@@ -204,7 +204,7 @@ const ContactHeroPage = () => {
                   <div className="relative custom-card">
                     <img
                       className="h-50 w-full object-cover rounded-lg"
-                      src="/images/01.png"
+                      src="/images/01.webp"
                       alt="Background Image 2"
                     />
                     {/* <div className="absolute inset-0 bg-primaryBlack opacity-50"></div> */}
@@ -218,7 +218,7 @@ const ContactHeroPage = () => {
                   <div className="relative custom-card">
                     <img
                       className="h-50 w-full object-cover rounded-lg"
-                      src="/images/03.png"
+                      src="/images/03.webp"
                       alt="Background Image 3"
                     />
 
@@ -232,7 +232,7 @@ const ContactHeroPage = () => {
                   <div className="relative custom-card">
                     <img
                       className="h-50 w-full object-cover rounded-lg"
-                      src="/images/02.png"
+                      src="/images/02.webp"
                       alt="Background Image 4"
                     />
 
@@ -255,7 +255,7 @@ const ContactHeroPage = () => {
                   This is another card below the form card.
                 </p>
                 <img
-                  src="/images/navbarImg.png"
+                  src="/images/navbarImg.webp"
                   alt="Image 1"
                   className="w-auto"
                 />

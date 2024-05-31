@@ -20,22 +20,22 @@ const CarouselLogos = () => {
       <Slider {...settings}>
         {/* Insert your company or sponsor logos here */}
         <div className="mx-4">
-  <img src="/images/logoipsum.png" alt="Company Logo 1" className="h-12 w-auto" />
+  <img src="/images/logoipsum.webp" alt="Company Logo 1" className="h-12 w-auto" />
 </div>
 <div className="mx-4">
-  <img src="/images/logoipsum.png" alt="Company Logo 2" className="h-12 w-auto" />
+  <img src="/images/logoipsum.webp" alt="Company Logo 2" className="h-12 w-auto" />
 </div>
 <div className="mx-4">
-  <img src="/images/logoipsum.png" alt="Company Logo 3" className="h-12 w-auto" />
+  <img src="/images/logoipsum.webp" alt="Company Logo 3" className="h-12 w-auto" />
 </div>
 <div className="mx-4">
-  <img src="/images/logoipsum.png" alt="Company Logo 4" className="h-12 w-auto" />
+  <img src="/images/logoipsum.webp" alt="Company Logo 4" className="h-12 w-auto" />
 </div>
 <div className="mx-4">
-  <img src="/images/logoipsum.png" alt="Company Logo 5" className="h-12 w-auto" />
+  <img src="/images/logoipsum.webp" alt="Company Logo 5" className="h-12 w-auto" />
 </div>
 <div className="mx-4">
-  <img src="/images/logoipsum.png" alt="Company Logo 6" className="h-12 w-auto" />
+  <img src="/images/logoipsum.webp" alt="Company Logo 6" className="h-12 w-auto" />
 </div>
         {/* Add more logos as needed */}
       </Slider>
