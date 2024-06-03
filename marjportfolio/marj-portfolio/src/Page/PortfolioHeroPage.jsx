@@ -1,5 +1,6 @@
 import React from "react";
 import { NoOutlinedButton } from "../components/Button";
+import { Link } from "react-router-dom";
 
 const gradientStyle = {
   background:
@@ -38,6 +39,9 @@ const PortfolioHeroPage = () => {
           <br />
 
           <NoOutlinedButton>
+            <Link to="/webDesign">
+            
+           
             <span className="flex ">
               Figma Web Designs
               <svg
@@ -56,6 +60,7 @@ const PortfolioHeroPage = () => {
                 />
               </svg>
             </span>
+            </Link>
           </NoOutlinedButton>
         </div>
 

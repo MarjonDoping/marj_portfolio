@@ -41,7 +41,7 @@ const NavBar = () => {
               viewBox="0 0 33 28"
               fill="none"
               className="mr-1"
-            >
+            > 
               <path
                 d="M0.571698 3.93758L13.4999 12.6138L13.5364 18.6461L0.5273 9.51277L0.571698 3.93758Z"
                 fill="white"
@@ -63,7 +63,10 @@ const NavBar = () => {
                 fill="#5661F6"
               />
             </svg>{" "}
-            Creatives
+            {/* <div className="text-white">
+            MD Creatives
+            </div> */}
+           
           </span>
         </a>
         <button
@@ -139,7 +142,7 @@ const NavBar = () => {
                             WORDPRESS DEVELOPMENT
                           </li>
                         </Link>
-                        <Link to="/graphic">
+                        <Link to="/graphicDesigns">
                           <li className="flex py-3 text-xl hover:text-violet-500 md:hover:underline md:border-0 md:p-2 ">
                             GRAPHIC DESIGN
                           </li>
@@ -218,7 +221,7 @@ const NavBar = () => {
                     </div>
                     <div className="w-1/3">
                       <img
-                        src="/images/navbarImg.webp"
+                        src="/images/prototyping.webp"
                         alt="Image 1"
                         className="w-auto"
                       />
@@ -228,20 +231,20 @@ const NavBar = () => {
               )}
             </li>
             <li>
-              <a
-                href="https://www.behance.net/marjondoping"
-                className="block py-6 px-6 text-white rounded hover:bg-gray-800 md:hover:bg-gray-900 md:border-0 md:hover:text-white md:p-2 "
-              >
-                WORKS
-              </a>
-            </li>
-            <li>
               <Link
                 to="/contactPage"
                 className="block py-2 px-3 text-white rounded hover:bg-gray-800 md:border-0 md:hover:text-white md:p-2 dark:text-w md:dark:hover:text-white "
               >
                 CONTACT
               </Link>
+            </li>
+            <li>
+              <a
+                href="https://www.behance.net/marjondoping"
+                className="block py-6 px-6 text-white rounded hover:bg-gray-800 md:hover:bg-gray-900 md:border-0 md:hover:text-white md:p-2 "
+              >
+                WORKS
+              </a>
             </li>
           </ul>
           <button

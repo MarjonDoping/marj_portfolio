@@ -8,6 +8,7 @@ export default {
   ],
   theme: {
     extend: {
+
       backgroundImage: (theme) => ({
         "gradient-custom":
           'linear-gradient(227deg, theme("colors.teal.300") 2.39%, theme("colors.green.800") 2.41%, theme("colors.pink.500") 48.1%, theme("colors.yellow.300") 95.67%)',

@@ -11,10 +11,10 @@ const testimonials = [
   },
   {
     id: 2,
-    name: 'John Doe',
-    position: 'CEO, Company X',
+    name: 'Sheena Costales',
+    position: 'Baguio, Wordpress Developer',
     comment: '"As a graphic designer, Marjon has a rare talent for turning concepts into visual masterpieces. Their ability to capture the essence of our brand and convey it through stunning graphics has greatly enhanced our marketing efforts."',
-    avatarUrl: 'https://media.licdn.com/dms/image/D5603AQHccF0YAtOz1A/profile-displayphoto-shrink_800_800/0/1706614856823?e=1721865600&v=beta&t=YFQn2Xr4KAZUcKi6m1iw92uj9k5TdTJdZv9bQ-MYb1s', // Add avatar URL here
+    avatarUrl: 'https://media.licdn.com/dms/image/D5603AQHHYp6snh2fYQ/profile-displayphoto-shrink_200_200/0/1648297828612?e=2147483647&v=beta&t=km53K-YMdbu7Rgune15kF16P7rqG8b4XAJQNKcKiqgw', // Add avatar URL here
   },
   {
     id: 3,
@@ -25,22 +25,22 @@ const testimonials = [
   },
   {
     id: 4,
-    name: 'John Doe',
-    position: 'Web Designer',
+    name: 'Gilliane MKTG',
+    position: 'SEO Marketing Manager',
     comment: '"Thanks to your SEO skills, our websites visibility and organic traffic have significantly increased. Their strategic approach to optimization and attention to detail have made a noticeable impact on our online presence."',
-    avatarUrl: 'https://images.unsplash.com/photo-1639149888905-fb39731f2e6c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D', // Add avatar URL here
+    avatarUrl: 'https://img.freepik.com/free-photo/confident-middle-aged-woman-looking-camera_1262-17333.jpg', // Add avatar URL here
   },
   {
     id: 5,
-    name: 'John Doe',
-    position: 'CEO, Company X',
+    name: 'Celine Terrado',
+    position: 'Designer, AI ',
     comment: 'Ive had the pleasure of collaborating with Marjon on several projects, and each time, theyve proven themselves to be a highly skilled and reliable SEO expert. Their in-depth knowledge of search engine algorithms and dedication to staying updated on industry trends make them a valuable asset to any team."',
-    avatarUrl: 'https://plus.unsplash.com/premium_photo-1670884442192-7b58d513cd55?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzd8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D', // Add avatar URL here
+    avatarUrl: 'https://media.licdn.com/dms/image/D5603AQE5Abet53pGPA/profile-displayphoto-shrink_200_200/0/1711127161073?e=2147483647&v=beta&t=iyXDesA0NR1kb2drvGSq5447UP-KLChK_Ed-KT6TAfg', // Add avatar URL here
   },
   {
     id: 6,
-    name: 'John Doe',
-    position: 'CEO, Company X',
+    name: 'Ryan J.',
+    position: 'Head Programmer, Cletos',
     comment: 'As a web designer, Marjon has an innate ability to balance aesthetics with functionality. They have a keen eye for design and a deep understanding of user experience, resulting in websites that not only look great but also perform exceptionally well."',
     avatarUrl: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODJ8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D', // Add avatar URL here
   },
