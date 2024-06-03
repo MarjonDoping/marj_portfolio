@@ -147,11 +147,11 @@ const NavBar = () => {
                             GRAPHIC DESIGN
                           </li>
                         </Link>
-                        <Link to="/branding">
+                        {/* <Link to="/branding">
                           <li className="flex py-3 text-xl hover:text-violet-500 md:hover:underline md:border-0 md:p-2 ">
                             BRANDING AND SEO
                           </li>
-                        </Link>
+                        </Link> */}
                       </ul>
                     </div>
                     <div className="w-1/3">
