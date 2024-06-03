@@ -7,6 +7,7 @@ import MymainPortfolio from "./Page/MymainPortfolio";
 import WebDesign from "./Page/WebDesign";
 import WordpressPage from "./Page/WordpressPage";
 import ContactPage from "./Page/ContactPage";
+import GraphicDesigns from "./Page/GraphicDesigns";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -21,6 +22,7 @@ function App() {
             <Route path="/webDesign" element={<WebDesign />} />
             <Route path="/Wordpress" element={<WordpressPage />} />
             <Route path="/contactPage" element={<ContactPage />} />
+            <Route path="/graphicDesigns" element={<GraphicDesigns />} />
           </Routes>
         </Router>
       </div>

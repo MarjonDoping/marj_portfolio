@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "tailwindcss/tailwind.css";
-import { NoOutlinedButton } from "../components/Button";
 
 const ContactHeroPage = () => {
   const [formData, setFormData] = useState({
@@ -9,8 +8,9 @@ const ContactHeroPage = () => {
     company: "",
     website: "",
     message: "",
-    // add more fields as needed
   });
+
+  const [status, setStatus] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,14 +20,39 @@ const ContactHeroPage = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // You can fetch or process the form data here
-    console.log(formData);
+    const form = e.target;
+
+    try {
+      const response = await fetch("https://formspree.io/f/xleqynpd", {
+        method: "POST",
+        body: new FormData(form),
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
+        setStatus("Form submitted successfully!");
+        form.reset();
+        setFormData({
+          name: "",
+          email: "",
+          company: "",
+          website: "",
+          message: "",
+        });
+      } else {
+        setStatus("Failed to submit the form. Please try again.");
+      }
+    } catch (error) {
+      setStatus("Failed to submit the form. Please try again.");
+    }
   };
 
   useEffect(() => {
-    window.scrollTo(0, 0); // Scroll to the top on component mount
+    window.scrollTo(0, 0);
   }, []);
 
   return (
@@ -47,7 +72,7 @@ const ContactHeroPage = () => {
             >
               Collaborate with me 
             </span>
-             {" "} and let's make your brand to the peak
+            {" "} and let's make your brand to the peak
             <p className=" mb-4 text-base text-white font-light sticky mt-4">
               Collaborate with me and let's make your brand to the peak
             </p>
@@ -75,7 +100,7 @@ const ContactHeroPage = () => {
           <div className="h-full overflow-y-auto">
             <div className="p-12 ">
               <div className="w-full p-4 bg-secondaryBlack rounded-lg shadow sm:p-6 md:p-8">
-                <form className="space-y-6 " onSubmit={handleSubmit}>
+                <form className="space-y-6" onSubmit={handleSubmit}>
                   <div>
                     <label
                       htmlFor="name"
@@ -89,7 +114,7 @@ const ContactHeroPage = () => {
                       id="name"
                       value={formData.name}
                       onChange={handleChange}
-                      className="bg-primaryBlack text-white  rounded-lg w-full border-none h-16"
+                      className="bg-primaryBlack text-white rounded-lg w-full border-none h-16"
                       placeholder="Your name"
                       required
                     />
@@ -145,7 +170,7 @@ const ContactHeroPage = () => {
                       id="website"
                       value={formData.website}
                       onChange={handleChange}
-                      className="bg-primaryBlack border text-white  rounded-lg w-full border-none h-16"
+                      className="bg-primaryBlack border text-white rounded-lg w-full border-none h-16"
                       placeholder="Your website"
                     />
                   </div>
@@ -162,7 +187,7 @@ const ContactHeroPage = () => {
                       id="message"
                       value={formData.message}
                       onChange={handleChange}
-                      className="bg-primaryBlack border text-white  rounded-lg w-full border-none p-2 "
+                      className="bg-primaryBlack border text-white rounded-lg w-full border-none p-2"
                       rows="4"
                       placeholder="Type your message here..."
                       required
@@ -180,21 +205,21 @@ const ContactHeroPage = () => {
                     Collaborate with me
                   </button>
                 </form>
+                {status && <p className="mt-4 text-white">{status}</p>}
               </div>
             </div>
             {/* Additional Card */}
             <div className="p-12 rounded-lg">
-              <div className="w-full p-4 bg-secondaryBlack shadow ">
-                <div className="grid grid-cols-2  gap-4 ">
+              <div className="w-full p-4 bg-secondaryBlack shadow">
+                <div className="grid grid-cols-2 gap-4">
                   {/* First Sub Card */}
-                  <div className=" custom-card ">
+                  <div className="custom-card">
                     <img
                       className="h-50 w-full rounded-lg"
                       src="/images/00.webp"
                       alt="Background Image 1"
                     />
-
-                    <div className="absolute inset-0 flex justify-center items-center ">
+                    <div className="absolute inset-0 flex justify-center items-center">
                       <span className="text-white text-lg">
                         Wordpress Development
                       </span>
@@ -207,7 +232,6 @@ const ContactHeroPage = () => {
                       src="/images/01.webp"
                       alt="Background Image 2"
                     />
-                    {/* <div className="absolute inset-0 bg-primaryBlack opacity-50"></div> */}
                     <div className="absolute inset-0 flex justify-center items-center">
                       <span className="text-white text-lg">
                         Figma Web Designs
@@ -221,7 +245,6 @@ const ContactHeroPage = () => {
                       src="/images/03.webp"
                       alt="Background Image 3"
                     />
-
                     <div className="absolute inset-0 flex justify-center items-center">
                       <span className="text-white text-lg">
                         Graphic Designs
@@ -235,7 +258,6 @@ const ContactHeroPage = () => {
                       src="/images/02.webp"
                       alt="Background Image 4"
                     />
-
                     <div className="absolute inset-0 flex justify-center items-center">
                       <span className="text-white text-lg">
                         Search Engine Optimizations

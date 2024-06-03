@@ -235,6 +235,14 @@ const NavBar = () => {
                 WORKS
               </a>
             </li>
+            <li>
+              <Link
+                to="/contactPage"
+                className="block py-2 px-3 text-white rounded hover:bg-gray-800 md:border-0 md:hover:text-white md:p-2 dark:text-w md:dark:hover:text-white "
+              >
+                CONTACT
+              </Link>
+            </li>
           </ul>
           <button
             onClick={handleDownloadCV}

@@ -12,6 +12,7 @@
   "dependencies": {
     "@fontsource-variable/plus-jakarta-sans": "^5.0.21",
     "@react-pdf/renderer": "^3.4.4",
+    "emailjs-com": "^3.2.0",
     "flowbite": "^2.3.0",
     "jspdf": "^2.5.1",
     "react": "^18.2.0",

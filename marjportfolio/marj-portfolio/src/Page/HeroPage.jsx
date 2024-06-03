@@ -105,6 +105,7 @@ const HeroPage = () => {
           </NoOutlinedButton>
           </Link>
 
+          <Link to="/graphicDesigns">
           <NoOutlinedButton>
             <span className="flex items-center">
               Graphic Designer
@@ -125,6 +126,7 @@ const HeroPage = () => {
               </svg>
             </span>
           </NoOutlinedButton>
+          </Link>
         </div>
       </div>
     </div>
