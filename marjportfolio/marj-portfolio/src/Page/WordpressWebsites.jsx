@@ -11,6 +11,7 @@ const WordpressWebsite = () => {
     "WORDPRESS DEVELOPMENT",
     "ELEMENTOR",
     "OXYGEN",
+    "SEO",
   ];
 
   // Sample data for cards
@@ -21,7 +22,7 @@ const WordpressWebsite = () => {
       title: "NEW MEDIA SERVICES",
       description:
         "New Media Services offers outsourced business services utilizing the collaboration of human and AI outsourcing solutions to upgrade your services and day-to-day operations.",
-      categories: ["WORDPRESS DEVELOPMENT", "OXYGEN"],
+      categories: ["WORDPRESS DEVELOPMENT", "OXYGEN", "SEO"],
       link: "https://newmediaservices.com.au/",
     },
 
@@ -31,7 +32,7 @@ const WordpressWebsite = () => {
       title: "CHEKKEE",
       description:
         "Providing real-time human and AI-powered content moderation solutions for all kinds of online platforms.",
-      categories: ["WORDPRESS DEVELOPMENT", "ELEMENTOR"],
+      categories: ["WORDPRESS DEVELOPMENT", "ELEMENTOR", "SEO"],
       link: "https://chekkee.com/",
     },
 
@@ -41,7 +42,7 @@ const WordpressWebsite = () => {
       title: "SUPPORTTXT",
       description:
         "Share stories about members of your community and their accomplishments, challenges, and experiences.",
-      categories: ["WORDPRESS DEVELOPMENT", "OXYGEN"],
+      categories: ["WORDPRESS DEVELOPMENT", "OXYGEN", "SEO"],
       link: "https://supporttxt.com/",
     },
     {
@@ -50,7 +51,7 @@ const WordpressWebsite = () => {
       title: "LIVE CHAT FAIRIES",
       description:
         "We are your one-stop shop for all chat operator services. Live chat operator services in real-time assist you in providing immediate assistance via integrable messaging platforms.",
-      categories: ["WORDPRESS DEVELOPMENT", "ELEMENTOR"],
+      categories: ["WORDPRESS DEVELOPMENT", "ELEMENTOR", "SEO"],
       link: "https://livechatfairies.com/",
     },
   ];
