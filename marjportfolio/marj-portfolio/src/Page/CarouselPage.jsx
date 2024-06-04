@@ -113,10 +113,10 @@ const CarouselPage = () => {
                 itemID={2}
                 className="relative float-left hidden -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
                 style={{ padding: "0 200px" }}
-                onClick={() => handleImageClick("/images/CARS2.webp")}
+                onClick={() => handleImageClick("/images/Marj-Aif.webp")}
               >
                 <img
-                  src="/images/cars.webp"
+                  src="/images/Marj-Ai.webp"
                   className="block w-full"
                   alt="..."
                 />
@@ -125,13 +125,26 @@ const CarouselPage = () => {
                 itemID={3}
                 className="relative float-left hidden -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
                 style={{ padding: "0 200px" }}
+                onClick={() => handleImageClick("/images/CARS2.webp")}
+              >
+                <img
+                  src="/images/cars.webp"
+                  className="block w-full"
+                  alt="..."
+                />
+              </TECarouselItem>
+             
+              <TECarouselItem
+                itemID={4}
+                className="relative float-left hidden -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                style={{ padding: "0 200px" }}
                 onClick={() => handleImageClick("/images/NFT MARJ.webp")}
               >
                 <img src="/images/nft.webp" className="block w-full" alt="..." />
               </TECarouselItem>
               {/* Additional Carousel Items */}
               <TECarouselItem
-                itemID={4}
+                itemID={5}
                 className="relative float-left hidden -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
                 style={{ padding: "0 200px" }}
                 onClick={() => handleImageClick("/images/BURGER 1.webp")}
@@ -143,7 +156,7 @@ const CarouselPage = () => {
                 />
               </TECarouselItem>
               <TECarouselItem
-                itemID={5}
+                itemID={6}
                 className="relative float-left hidden -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
                 style={{ padding: "0 200px" }}
                 onClick={() => handleImageClick("/images/Marj -Bike.webp")}
@@ -155,7 +168,7 @@ const CarouselPage = () => {
                 />
               </TECarouselItem>
               <TECarouselItem
-                itemID={6}
+                itemID={7}
                 className="relative float-left hidden -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
                 style={{ padding: "0 200px" }}
                 onClick={() => handleImageClick("/images/Marj-cozy.webp")}

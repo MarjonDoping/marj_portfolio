@@ -23,7 +23,7 @@ const NavBar = () => {
   }, []);
 
   const cvDownloadLink =
-    "https://drive.google.com/file/d/19RqO1dngjqo3n-MvCT0rmW3rHGFOhwgp/view?usp=drive_link";
+    "https://drive.google.com/file/d/11hxJ-IwQm5a9RSnGLHwRA-10_gXLdytb/view?usp=drive_link";
 
   const handleDownloadCV = () => {
     window.open(cvDownloadLink, "_blank");
@@ -240,7 +240,7 @@ const NavBar = () => {
             </li>
             <li>
               <a
-                href="https://www.behance.net/marjondoping"
+                href="https://drive.google.com/file/d/1RTl9jsVsniRZ4b7AuSGZRPbhX80iBpbQ/view?usp=drive_link"
                 className="block py-6 px-6 text-white rounded hover:bg-gray-800 md:hover:bg-gray-900 md:border-0 md:hover:text-white md:p-2 "
               >
                 WORKS
