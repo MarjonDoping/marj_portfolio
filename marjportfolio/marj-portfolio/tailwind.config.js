@@ -36,7 +36,7 @@ export default {
       "mh4": "2.25rem",
       "mh5": "5.625rem",
       "mh6": "9.375rem",
-      "mh7": "4.375rem",
+      "mh7": "4rem",
     },
 
     animation: {
