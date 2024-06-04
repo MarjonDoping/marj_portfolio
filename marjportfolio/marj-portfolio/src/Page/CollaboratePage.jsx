@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const CollaboratePage = () => {
   return (
     <div className="bg-cover bg-center bg-black py-24">
-      <div className="max-w-screen-xl mx-auto p-4 flex justify-between">
+      <div className="max-w-screen-lg mx-auto p-4 flex justify-between">
         <div className="w-2/3">
           <div className="flex">
             <PrimaryChip>

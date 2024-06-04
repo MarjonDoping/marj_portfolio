@@ -14,7 +14,7 @@ const WebDesignHeroPage = () => {
   return (
     <div className="bg-black">
       <div
-        className="flex max-w-screen-xl flex-wrap justify-center items-center bg-cover bg-black bg-center mx-auto  font-plus jakarta sans "
+        className="flex max-w-screen-lg flex-wrap justify-center items-center bg-cover bg-black bg-center mx-auto  font-plus jakarta sans "
         style={{ backgroundImage: `url(/images/bg1.webp)` }}
       >
         {/* Left Column */}

@@ -121,7 +121,7 @@ const Livepreview = () => {
   return (
     <div className="bg-cover bg-center bg-repeat bg-primaryBlack">
 
-      <div className="flex pt-6 max-w-screen-xl mx-auto px-12">
+      <div className="flex pt-6 max-w-screen-lg mx-auto px-12">
         <select
           className="bg-primaryBlack rounded-lg border-gray-700 text-gray-200 p-4"
           value={currentCategory}
@@ -139,7 +139,7 @@ const Livepreview = () => {
         {/* Your content */}
       </div>
 
-      <div className="grid grid-cols-2 gap-8 max-w-screen-xl mx-auto py-12 px-12">
+      <div className="grid grid-cols-2 gap-8 max-w-screen-lg mx-auto py-12 px-12">
         {/* Cards */}
         {filteredCards.map((card) => (
           <div

@@ -4,7 +4,7 @@ const WebdesignCards = () => {
   return (
     <>
       <div className="bg-white pt-24">
-        <div className="max-w-screen-xl mx-auto p-4">
+        <div className="max-w-screen-lg mx-auto p-4">
           <div className="flex items-center justify-between">
             <div className="w-1/2 pr-4">
               <h2 className="text-4xl font-normal text-black">
@@ -25,7 +25,7 @@ const WebdesignCards = () => {
         </div>
       </div>
       <div className="flex justify-center  py-8">
-        <div className="max-w-screen-xl w-full px-4">
+        <div className="max-w-screen-lg w-full px-4">
           <div className="flex justify-between gap-8">
             <div className="max-w-sm custom-card rounded overflow-hidden shadow-lg p-12">
             <svg xmlns="http://www.w3.org/2000/svg" width="61" height="60" viewBox="0 0 61 60" fill="none">

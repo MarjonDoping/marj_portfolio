@@ -31,7 +31,7 @@ const NavBar = () => {
 
   return (
     <nav className="bg-black border-black sticky top-0 z-50">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <div className="max-w-screen-lg flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <span className="self-center flex items-center text-2xl font-semibold whitespace-nowrap ">
             <svg
@@ -129,7 +129,7 @@ const NavBar = () => {
               </button>
               {isDropdownOpen && (
                 <div className="fixed justify-center top-16 left-0 w-full bg-primaryBlack text-white py-12 px-3 mt-1 rounded shadow-lg z-50">
-                  <div className="flex flex-row max-w-screen-xl mx-auto items-center justify-between">
+                  <div className="flex flex-row max-w-screen-lg mx-auto items-center justify-between">
                     <div className="w-1/3">
                       <ul>
                         <Link to="/webDesign">

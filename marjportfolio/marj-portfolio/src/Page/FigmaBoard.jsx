@@ -2,7 +2,7 @@ import React from 'react'
 
 const FigmaBoard = () => {
   return (
-    <div className=" flex items-center justify-center max-w-screen-xl mx-auto">
+    <div className=" flex items-center justify-center max-w-screen-lg mx-auto">
     <img
       src="/images/figmaboard.webp"
       alt="Centered Image"

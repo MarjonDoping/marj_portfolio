@@ -6,7 +6,7 @@ const HeroPageGraphics = () => {
   return (
     <div className="max-w-screen-m bg-primaryBlack p-24 ">
       <div className="bg-primaryBlack ">
-        <div className="max-w-screen-xl mx-auto p-4">
+        <div className="max-w-screen-lg mx-auto p-4">
           <div className="flex items-center justify-between">
             <div className="w-full pr-4">
               <h2 className="text-mh4 font-medium text-white">
@@ -16,7 +16,7 @@ const HeroPageGraphics = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-around items-center mt-8">
+      <div className="max-w-screen-lg mx-auto flex flex-col md:flex-row justify-around items-center mt-8">
         <Link to="https://newmediaservices.com.au/blog/" className="custom-card flex-1 max-w-xs md:max-w-md lg:max-w-lg rounded overflow-hidden shadow-lg m-4">
           <img className="w-full" src="/images/NMS.webp" alt="Card image" />
           <div className="px-4 py-4 flex flex-col justify-between items-center bg-secondaryBlack">

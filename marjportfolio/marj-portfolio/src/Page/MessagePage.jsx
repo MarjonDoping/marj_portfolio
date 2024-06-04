@@ -8,7 +8,7 @@ const MessagePage = () => {
       <div   className="bg-cover bg-center py-24" style=
       {{ backgroundImage: 'url("/images/bg2.webp")' }}>
     
-        <div className="max-w-screen-xl mx-auto p-4">
+        <div className="max-w-screen-lg mx-auto p-4">
           <div className="flex items-center justify-between">
             <p className="text-black font-jakarta-sans font-normal text-4xl leading-56">
               “My focus is always on creating designs that not only reflect my

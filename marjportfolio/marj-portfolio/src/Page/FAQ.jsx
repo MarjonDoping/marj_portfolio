@@ -65,7 +65,7 @@ const FAQ = () => {
   return (
     <>
       <div className="bg-cover bg-center py-24">
-        <div className="max-w-screen-xl mx-auto px-5">
+        <div className="max-w-screen-lg mx-auto px-5">
           <div className="flex justify-center items-center">
             <PrimaryChip>
               <span className="">Web Design</span>

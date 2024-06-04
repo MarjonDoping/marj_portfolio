@@ -94,7 +94,7 @@ const Testimonials = () => {
       <p className="text-black mb-8 text-center">
       Discover why clients rave about my's skills in web design, graphic design, WordPress development, and SEO expertise. Read their glowing testimonials here!
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 py-12  max-w-screen-xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 py-12  max-w-screen-lg mx-auto">
         {testimonials.map(testimonial => (
           <TestimonialCard key={testimonial.id} testimonial={testimonial} />
         ))}

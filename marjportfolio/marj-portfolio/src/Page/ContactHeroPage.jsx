@@ -57,7 +57,7 @@ const ContactHeroPage = () => {
 
   return (
     <div className="bg-primaryBlack">
-      <div className="flex max-w-screen-xl mx-auto">
+      <div className="flex max-w-screen-lg mx-auto">
         <div className="w-1/3 p-6 ">
           <h1 className="text-3xl font-bold mb-4 text-white pt-12 sticky top-10">
             <span

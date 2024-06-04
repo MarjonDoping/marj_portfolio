@@ -54,7 +54,7 @@ const CarouselPage = () => {
         className="bg-cover bg-center py-24"
         style={{ backgroundImage: 'url("/images/background.webp")' }}
       >
-        <div className="max-w-screen-xl mx-auto px-5">
+        <div className="max-w-screen-lg mx-auto px-5">
          
             <div className="flex justify-center items-center">
               <PrimaryChip>

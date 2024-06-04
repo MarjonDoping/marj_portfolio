@@ -5,7 +5,7 @@ import React from "react";
 const Partners = () => {
   return (
     <div className="bg-white pt-24">
-      <div className="max-w-screen-xl mx-auto p-4">
+      <div className="max-w-screen-lg mx-auto p-4">
         <div className="flex items-center justify-between">
           <div className="w-1/2 pr-4">
             <h2 className="text-4xl font-normal text-black">
