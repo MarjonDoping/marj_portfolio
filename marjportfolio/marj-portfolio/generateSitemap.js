@@ -18,7 +18,7 @@ const generateSitemap = () => {
     urls: pages,
   });
 
-  fs.writeFileSync('./public/sitemap.xml', sitemapInstance.toString());
+  fs.writeFileSync('./sitemap.xml', sitemapInstance.toString());
 };
 
 generateSitemap();
