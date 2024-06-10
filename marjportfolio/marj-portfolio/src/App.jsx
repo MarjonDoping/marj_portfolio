@@ -8,6 +8,8 @@ import WebDesign from "./Page/WebDesign";
 import WordpressPage from "./Page/WordpressPage";
 import ContactPage from "./Page/ContactPage";
 import GraphicDesigns from "./Page/GraphicDesigns";
+import Sitemap from "./Page/Sitemap";
+
 
 function App() {
   const [count, setCount] = useState(0);
@@ -23,6 +25,7 @@ function App() {
             <Route path="/Wordpress" element={<WordpressPage />} />
             <Route path="/contactPage" element={<ContactPage />} />
             <Route path="/graphicDesigns" element={<GraphicDesigns />} />
+            <Route path="/sitemap.xml" Component={Sitemap}  />
           </Routes>
         </Router>
       </div>
