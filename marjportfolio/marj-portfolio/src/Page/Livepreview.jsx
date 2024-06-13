@@ -36,14 +36,33 @@ const Livepreview = () => {
 
     {
       id: 3,
+      image: "/images/Marj-LoyaltyTXT.webp",
+      title: "LoyaltyTXT landing Page",
+      description: "Explore our suite of LoyaltyTXT designed for broadcasting application features",
+      categories: [ "DESIGN" ,"FIGMA"],
+      link: "https://www.behance.net/gallery/200921415/Loyalty-TXT-Landing-Page-Redesign"
+    },
+
+    {
+      id: 4,
+      image: "/images/Ballertube.webp",
+      title: "BallerTube",
+      description: "Watch Sports and Action videos and livestream from this website application",
+      categories: [ "DESIGN" ,"FIGMA"],
+      link: "https://www.ballertube.com/"
+    },
+
+    {
+      id: 5,
       image: "/images/Marj-Ai.webp",
       title: "Smart AI landing Page (Light)",
       description: "Explore our suite of AI-powered tools designed to enhance productivity, improve decision-making",
       categories: [ "DESIGN" ,"FIGMA"],
       link: "https://www.behance.net/gallery/199832329/ai-Landing-Page"
     },
+
     {
-      id: 4,
+      id: 6,
       image: "/images/bike.webp",
       title: "Bike Landing Page",
       description: "Explore our collection of high-performance, durable, and stylish bikes, crafted to deliver an exceptional riding experience.",
@@ -51,7 +70,7 @@ const Livepreview = () => {
       link: "https://www.behance.net/gallery/193952471/E-Bike-Landing-page"
     },
     {
-      id: 5,
+      id: 7,
       image: "/images/nft.webp",
       title: "NFT Landing Page",
       description:
@@ -60,7 +79,7 @@ const Livepreview = () => {
       link: "https://www.behance.net/gallery/193950225/NFT-Website"
     },
     {
-      id: 6,
+      id: 8,
       image: "/images/burger.webp",
       title: "Burger Landing Page",
       description: "Whether you crave classic cheeseburgers or adventurous gourmet creations, we have something to satisfy every palate.",
@@ -68,7 +87,7 @@ const Livepreview = () => {
       link: "https://www.behance.net/gallery/193952259/Burger-Website-Landing-Page"
     },
     {
-      id: 7,
+      id: 9,
       image: "/images/Recycle.webp",
       title: "Recycle Landing Page",
       description: "Discover our comprehensive recycling services, learn how to recycle various materials, and find tips on living a more eco-friendly lifestyle.",
@@ -77,7 +96,7 @@ const Livepreview = () => {
     },
    
     {
-      id: 8,
+      id: 10,
       image: "/images/rhu.webp",
       title: "RHU Landing Page",
       description: "Explore our state-of-the-art facilities, comprehensive medical services, and patient-centered approach. Your health and well-being are our top priorities.",
@@ -86,7 +105,7 @@ const Livepreview = () => {
     },
 
     {
-      id: 9,
+      id: 11,
       image: "/images/cletos.webp",
       title: "Bakeshop Landing Page",
       description: "Indulge in our freshly baked goods, crafted with love and the finest ingredients. From decadent cakes and pastries to artisan bread and cookies.",
@@ -94,7 +113,7 @@ const Livepreview = () => {
       link: "https://www.behance.net/gallery/175915861/Bakeshop-Web-Design"
     },
     {
-      id: 10,
+      id: 12,
       image: "/images/sales.webp",
       title: "E-commerce Landing Page",
       description: "rom decadent cakes and pastries to artisan bread and cookies, our delightful creations are perfect for any occasion",
