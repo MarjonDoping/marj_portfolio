@@ -125,7 +125,7 @@ const CarouselPage = () => {
                 itemID={3}
                 className="relative float-left hidden -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
                 style={{ padding: "0 200px" }}
-                onClick={() => handleImageClick("/images/LoyaltyTXT.webp")}
+                onClick={() => handleImageClick("/images/Marj-Aif.webp")}
               >
                 <img
                   src="/images/Marj-Ai.webp"
