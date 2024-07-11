@@ -15,32 +15,32 @@ const Livepreview = () => {
 
   // Sample data for cards
   const yourCardsData = [
+
     {
       id: 1,
-      image: "/images/banking.webp",
-      title: "Banking Landing Page",
-      description: "Discover a range of personalized banking solutions tailored to meet your needs, from  accounts to loans opportunities.",
-      categories: ["WEB DEVELOPMENT", "DESIGN" ,"FIGMA"],
-      link: "https://www.behance.net/gallery/196307891/Bank-Landing-Page"
+      image: "/images/Marj-Ai.webp",
+      title: "Smart AI landing Page (Light)",
+      description: "Explore our suite of AI-powered tools designed to enhance productivity, improve decision-making",
+      categories: [ "DESIGN" ,"FIGMA"],
+      link: "https://smartai-six.vercel.app/"
     },
-
    
     {
       id: 2,
-      image: "/images/marj-ai2.webp",
-      title: "Smart AI Landing Page",
-      description: "Our cutting-edge artificial intelligence solutions empower businesses to transform data into actionable insights, streamline operations.",
-      categories: ["WEB DEVELOPMENT", "DESIGN" ,"FIGMA"],
-      link: "https://www.behance.net/gallery/199831011/AI-Landing-Page"
-    },
-
-    {
-      id: 3,
       image: "/images/Marj-LoyaltyTXT.webp",
       title: "LoyaltyTXT landing Page",
       description: "Explore our suite of LoyaltyTXT designed for broadcasting application features",
       categories: [ "DESIGN" ,"FIGMA"],
       link: "https://www.behance.net/gallery/200921415/Loyalty-TXT-Landing-Page-Redesign"
+    },
+
+    {
+      id: 3,
+      image: "/images/marj-ai2.webp",
+      title: "Smart AI Landing Page",
+      description: "Our cutting-edge artificial intelligence solutions empower businesses to transform data into actionable insights, streamline operations.",
+      categories: ["WEB DEVELOPMENT", "DESIGN" ,"FIGMA"],
+      link: "https://www.behance.net/gallery/199831011/AI-Landing-Page"
     },
 
     {
@@ -54,12 +54,13 @@ const Livepreview = () => {
 
     {
       id: 5,
-      image: "/images/Marj-Ai.webp",
-      title: "Smart AI landing Page (Light)",
-      description: "Explore our suite of AI-powered tools designed to enhance productivity, improve decision-making",
-      categories: [ "DESIGN" ,"FIGMA"],
-      link: "https://www.behance.net/gallery/199832329/ai-Landing-Page"
+      image: "/images/banking.webp",
+      title: "Banking Landing Page",
+      description: "Discover a range of personalized banking solutions tailored to meet your needs, from  accounts to loans opportunities.",
+      categories: ["WEB DEVELOPMENT", "DESIGN" ,"FIGMA"],
+      link: "https://www.behance.net/gallery/196307891/Bank-Landing-Page"
     },
+
 
     {
       id: 6,
