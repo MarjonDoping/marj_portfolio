@@ -8,6 +8,7 @@ import Livepreview from './Livepreview';
 import CollaboratePage from './CollaboratePage';
 import OffersPage from './OffersPage';
 import Footer from './Footer';
+import JitterGif from './JitterGif';
 
 const MymainPortfolio = () => {
   useEffect(() => {
@@ -21,6 +22,7 @@ const MymainPortfolio = () => {
       <Livepreview/>
       <CollaboratePage/>
       <OffersPage/>
+      <JitterGif/>
       <Footer/>
     </div>
   );
