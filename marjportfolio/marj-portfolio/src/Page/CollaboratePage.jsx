@@ -1,17 +1,16 @@
 import React from "react";
-import { Avatar1 } from "../components/Avatar";
 import { PrimaryChip } from "../components/Chips";
 import { SecondaryButton } from "../components/Button";
 import { Link } from "react-router-dom";
 
 const CollaboratePage = () => {
   return (
-    <div className="bg-cover bg-center bg-black py-24">
-      <div className="max-w-screen-lg mx-auto p-4 flex justify-between">
-        <div className="w-2/3">
+    <div className="bg-cover bg-center bg-black py-24 px-8 flex flex-col">
+      <div className="max-w-screen-lg mx-auto p-4 flex flex-col md:flex-row md:justify-between ">
+        <div className="md:w-2/3 mb-8 md:mb-0">
           <div className="flex">
             <PrimaryChip>
-              <span className="">Contact Me</span>
+              <span>Contact Me</span>
             </PrimaryChip>
           </div>
           <div className="flex items-center justify-between pt-7">
@@ -34,15 +33,15 @@ const CollaboratePage = () => {
             Drop me a line and let's discuss how Figma and my design expertise
             can bring your ideas to life!
           </p>
-          <div className="pt-4"></div>
         </div>
-        <Link to="/contactPage">
-          {" "}
-          <div className="py-12 flex justify-center items-center">
-            <SecondaryButton> Collaborate with me</SecondaryButton>
-          </div>
-        </Link>
+
+        <div className="md:w-1/3 flex justify-center items-center">
+          <Link to="/contactPage">
+            <SecondaryButton>Collaborate with me</SecondaryButton>
+          </Link>
+        </div>
       </div>
+
     </div>
   );
 };

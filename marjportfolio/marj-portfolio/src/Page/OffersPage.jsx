@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 const OffersPage = () => {
   return (
     <>
-      <div className="bg-cover bg-center py-8 sm:py-12 md:py-16 lg:py-24">
+      <div className="bg-cover bg-center py-8 px-8 sm:py-12 md:py-16 lg:py-24">
         <div >
           <div className="flex justify-center items-center">
             <PrimaryChip>
