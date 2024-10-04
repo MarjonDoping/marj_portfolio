@@ -18,7 +18,7 @@ const PortfolioHeroPage = () => {
         <div className="w-1/2 pl-100">
           {/* <img src="/images/Multiplayer1.webp" alt="Background" className="absolute inset-40 object-cover h-12 opacity-100 animate-move" /> */}
           <div className="px-8">
-            <h1 className="text-mh1 items-center text-white font-bold mb-4 leading-none">
+          <h1 className="text-mh2.5 md:text-mh7 font-bold text-white leading-none mb-8">
               Let's{" "}
               <span
                 style={{
@@ -43,7 +43,7 @@ const PortfolioHeroPage = () => {
             
            
             <span className="flex ">
-              Figma Web Designs
+              Figma Designs
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="25"

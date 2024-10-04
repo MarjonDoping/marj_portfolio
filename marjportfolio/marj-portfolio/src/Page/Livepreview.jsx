@@ -159,7 +159,7 @@ const Livepreview = () => {
         {/* Your content */}
       </div>
 
-      <div className="grid grid-cols-2 gap-8 max-w-screen-lg mx-auto py-12 px-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-screen-lg mx-auto py-8 px-8">
         {/* Cards */}
         {filteredCards.map((card) => (
           <div
