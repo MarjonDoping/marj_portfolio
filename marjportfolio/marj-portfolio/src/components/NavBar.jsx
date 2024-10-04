@@ -1,12 +1,17 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const dropdownRef = useRef(null);
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
+  };
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
   const handleClickOutside = (event) => {
@@ -62,19 +67,13 @@ const NavBar = () => {
                 d="M9.70519 21.0895L16.5363 20.6954L13.4056 23.5343L10.8694 25.7997L9.70519 21.0895Z"
                 fill="#5661F6"
               />
-            </svg>{" "}
-            {/* <div className="text-white">
-            MD Creatives
-            </div> */}
-           
+            </svg>
           </span>
         </a>
         <button
-          data-collapse-toggle="navbar-default"
           type="button"
-          className="inline-flex bg-gray-500 items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
-          aria-controls="navbar-default"
-          aria-expanded="false"
+          className="inline-flex bg-gray-500 items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+          onClick={toggleMobileMenu}
         >
           <span className="sr-only">Open main menu</span>
           <svg
@@ -94,14 +93,15 @@ const NavBar = () => {
           </svg>
         </button>
         <div
-          className="hidden w-full md:flex md:w-auto md:ml-auto relative"
-          id="navbar-default"
+          className={`${
+            isMobileMenuOpen ? "flex" : "hidden"
+          } w-full md:flex md:w-auto md:ml-auto relative`}
         >
           <ul className="font-medium flex flex-col md:flex-row md:space-x-8 rtl:space-x-reverse px-4">
             <li>
               <Link
                 to="/portfolio"
-                className="block py-2 px-3 text-white rounded hover:bg-gray-800 md:border-0 md:hover:text-white md:p-2 dark:text-w md:dark:hover:text-white "
+                className="block py-2 px-3 text-white rounded hover:bg-gray-800 md:border-0 md:hover:text-white md:p-2 dark:text-w md:dark:hover:text-white"
               >
                 PORTFOLIO
               </Link>
@@ -109,7 +109,7 @@ const NavBar = () => {
             <li ref={dropdownRef}>
               <button
                 onClick={toggleDropdown}
-                className="flex justify-center items-center py-2 px-3  text-white rounded hover:bg-gray-800 md:hover:bg-gray-800 md:border-0  dark:text-w md:dark:hover:text-whitemd:dark:hover:bg-transparent"
+                className="flex justify-center items-center py-2 px-3 text-white rounded hover:bg-gray-800 md:hover:bg-gray-800 md:border-0 dark:text-w md:dark:hover:text-whitemd:dark:hover:bg-transparent"
               >
                 SERVICES
                 <svg
@@ -133,25 +133,20 @@ const NavBar = () => {
                     <div className="w-1/3">
                       <ul>
                         <Link to="/webDesign">
-                          <li className="flex py-3 text-xl hover:text-violet-500 md:hover:underline md:border-0 md:p-2 ">
+                          <li className="flex py-3 text-xl hover:text-violet-500 md:hover:underline md:border-0 md:p-2">
                             WEB DESIGN
                           </li>
                         </Link>
                         <Link to="/Wordpress">
-                          <li className="flex py-3 text-xl hover:text-violet-500 md:hover:underline md:border-0 md:p-2 ">
+                          <li className="flex py-3 text-xl hover:text-violet-500 md:hover:underline md:border-0 md:p-2">
                             WORDPRESS DEVELOPMENT
                           </li>
                         </Link>
                         <Link to="/graphicDesigns">
-                          <li className="flex py-3 text-xl hover:text-violet-500 md:hover:underline md:border-0 md:p-2 ">
+                          <li className="flex py-3 text-xl hover:text-violet-500 md:hover:underline md:border-0 md:p-2">
                             GRAPHIC DESIGN
                           </li>
                         </Link>
-                        {/* <Link to="/branding">
-                          <li className="flex py-3 text-xl hover:text-violet-500 md:hover:underline md:border-0 md:p-2 ">
-                            BRANDING AND SEO
-                          </li>
-                        </Link> */}
                       </ul>
                     </div>
                     <div className="w-1/3">
@@ -160,60 +155,54 @@ const NavBar = () => {
                           Collaborate with me
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
+                            width="18"
+                            height="18"
                             viewBox="0 0 24 24"
                             fill="none"
-                            className="justify-center"
                           >
                             <path
                               fillRule="evenodd"
                               clipRule="evenodd"
-                              d="M13.4697 5.46967C13.7626 5.17678 14.2374 5.17678 14.5303 5.46967L20.5303 11.4697C20.8232 11.7626 20.8232 12.2374 20.5303 12.5303L14.5303 18.5303C14.2374 18.8232 13.7626 18.8232 13.4697 18.5303C13.1768 18.2374 13.1768 17.7626 13.4697 17.4697L18.1893 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H18.1893L13.4697 6.53033C13.1768 6.23744 13.1768 5.76256 13.4697 5.46967Z"
+                              d="M12 3C11.4477 3 11 3.44772 11 4V10H4C3.44772 10 3 10.4477 3 11C3 11.5523 3.44772 12 4 12H11V18C11 18.5523 11.4477 19 12 19C12.5523 19 13 18.5523 13 18V12H20C20.5523 12 21 11.5523 21 11C21 10.4477 20.5523 10 20 10H13V4C13 3.44772 12.5523 3 12 3Z"
                               fill="#F7B329"
                             />
                           </svg>
                         </p>
                       </Link>
-
                       <hr className="mr-8" />
-
                       <a href="https://www.behance.net/marjondoping">
                         <p className="flex py-3 mr-8 mx-auto items-center justify-between">
                           My Works
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
+                            width="18"
+                            height="18"
                             viewBox="0 0 24 24"
                             fill="none"
-                            className="justify-center"
                           >
                             <path
                               fillRule="evenodd"
                               clipRule="evenodd"
-                              d="M13.4697 5.46967C13.7626 5.17678 14.2374 5.17678 14.5303 5.46967L20.5303 11.4697C20.8232 11.7626 20.8232 12.2374 20.5303 12.5303L14.5303 18.5303C14.2374 18.8232 13.7626 18.8232 13.4697 18.5303C13.1768 18.2374 13.1768 17.7626 13.4697 17.4697L18.1893 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H18.1893L13.4697 6.53033C13.1768 6.23744 13.1768 5.76256 13.4697 5.46967Z"
+                              d="M12 3C11.4477 3 11 3.44772 11 4V10H4C3.44772 10 3 10.4477 3 11C3 11.5523 3.44772 12 4 12H11V18C11 18.5523 11.4477 19 12 19C12.5523 19 13 18.5523 13 18V12H20C20.5523 12 21 11.5523 21 11C21 10.4477 20.5523 10 20 10H13V4C13 3.44772 12.5523 3 12 3Z"
                               fill="#F7B329"
                             />
                           </svg>
                         </p>
                       </a>
-
                       <hr className="mr-8" />
                       <p className="flex py-3 mr-8 mx-auto items-center justify-between">
                         Why use Figma for Web Design?
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
+                          width="18"
+                          height="18"
                           viewBox="0 0 24 24"
                           fill="none"
-                          className="justify-center"
                         >
                           <path
                             fillRule="evenodd"
                             clipRule="evenodd"
-                            d="M13.4697 5.46967C13.7626 5.17678 14.2374 5.17678 14.5303 5.46967L20.5303 11.4697C20.8232 11.7626 20.8232 12.2374 20.5303 12.5303L14.5303 18.5303C14.2374 18.8232 13.7626 18.8232 13.4697 18.5303C13.1768 18.2374 13.1768 17.7626 13.4697 17.4697L18.1893 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H18.1893L13.4697 6.53033C13.1768 6.23744 13.1768 5.76256 13.4697 5.46967Z"
+                            d="M12 3C11.4477 3 11 3.44772 11 4V10H4C3.44772 10 3 10.4477 3 11C3 11.5523 3.44772 12 4 12H11V18C11 18.5523 11.4477 19 12 19C12.5523 19 13 18.5523 13 18V12H20C20.5523 12 21 11.5523 21 11C21 10.4477 20.5523 10 20 10H13V4C13 3.44772 12.5523 3 12 3Z"
                             fill="#F7B329"
                           />
                         </svg>
@@ -233,7 +222,7 @@ const NavBar = () => {
             <li>
               <Link
                 to="/contactPage"
-                className="block py-2 px-3 text-white rounded hover:bg-gray-800 md:border-0 md:hover:text-white md:p-2 dark:text-w md:dark:hover:text-white "
+                className="block py-2 px-3 text-white rounded hover:bg-gray-800 md:border-0 md:hover:text-white md:p-2 dark:text-w md:dark:hover:text-white"
               >
                 CONTACT
               </Link>
@@ -241,13 +230,12 @@ const NavBar = () => {
             <li>
               <a
                 href="https://drive.google.com/file/d/1RTl9jsVsniRZ4b7AuSGZRPbhX80iBpbQ/view?usp=drive_link"
-                className="block py-6 px-6 text-white rounded hover:bg-gray-800 md:hover:bg-gray-900 md:border-0 md:hover:text-white md:p-2 "
+                className="block py-3 px-3 text-white rounded hover:bg-gray-800 md:hover:bg-gray-900 md:border-0 md:hover:text-white md:p-2"
               >
                 WORKS
               </a>
             </li>
-          </ul>
-          <button
+            <button
             onClick={handleDownloadCV}
             className="text-white font-semibold py-2 px-4 rounded bg-gradient-to-r from-teal-400 to-green-600 hover:from-pink-500 hover:to-blue-500 hover:scale-105 transform transition duration-300 ease-in-out"
             style={{
@@ -257,6 +245,8 @@ const NavBar = () => {
           >
             DOWNLOAD CV
           </button>
+          </ul>
+         
         </div>
       </div>
     </nav>
