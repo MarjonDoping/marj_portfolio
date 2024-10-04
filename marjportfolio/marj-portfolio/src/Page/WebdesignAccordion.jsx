@@ -92,7 +92,7 @@ const WebdesignAccordion = () => {
                   />
                 </svg>
               </div>
-              <h2 className="text-4xl font-medium">User Experience Design</h2>
+              <h2 className="text-2xl md:text-4xl font-medium">User Experience Design</h2>
             </div>
           }
           cardContent={
@@ -134,7 +134,7 @@ const WebdesignAccordion = () => {
                   />
                 </svg>
               </div>
-              <h2 className="text-4xl font-medium">User Interface Design</h2>
+              <h2 className="text-2xl md:text-4xl font-medium">User Interface Design</h2>
             </div>
           }
           cardContent={
@@ -187,7 +187,7 @@ const WebdesignAccordion = () => {
                   />
                 </svg>
               </div>
-              <h2 className="text-4xl font-medium">Responsive Web Designs</h2>
+              <h2 className="text-2xl md:text-4xl font-medium">Responsive Web Designs</h2>
             </div>
           }
           cardContent={
@@ -234,7 +234,7 @@ const WebdesignAccordion = () => {
                   />
                 </svg>
               </div>
-              <h2 className="text-4xl font-medium">Product Prototyping</h2>
+              <h2 className="text-2xl md:text-4xl font-medium">Product Prototyping</h2>
             </div>
           }
           cardContent={
@@ -276,7 +276,7 @@ const WebdesignAccordion = () => {
                   />
                 </svg>
               </div>
-              <h2 className="text-4xl font-medium">Wireframing and Mockups</h2>
+              <h2 className="text-2xl md:text-4xl font-medium">Wireframing and Mockups</h2>
             </div>
           }
           cardContent={
