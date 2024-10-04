@@ -56,6 +56,7 @@ const HeroPage = () => {
             src="/images/WordPress logo.webp"
             alt="Image 2"
             className="w-16 h-16"
+            
           />
         </div>
         <div className="flex items-center justify-center mt-10 mx-4">
