@@ -7,14 +7,7 @@ export default {
     "./node_modules/flowbite/**/*.js",
   ],
   theme: {
-    screens: {
-      sm: '640px',
-      md: '768px',
-      lg: '1024px',
-      xl: '1280px',
-      '2xl': '1536px',
-    },
-    
+
     extend: {
 
       backgroundImage: (theme) => ({
@@ -40,6 +33,7 @@ export default {
       xl: "1.25rem",
       "mh1": "3rem",
       "mh2": "1.563rem",
+      "mh2.5": "3rem",
       "mh3": "1.953rem",
       "mh4": "2.25rem",
       "mh5": "5.625rem",

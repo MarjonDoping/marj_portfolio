@@ -14,18 +14,14 @@ const CarouselPage = () => {
   const modalRef = useRef(null);
 
   useEffect(() => {
-    // Add overflow hidden to the body when modal is open
     if (modalOpen) {
       document.body.style.overflow = "hidden";
-      // Add event listener to close modal when clicked outside the image
       document.addEventListener("mousedown", handleClickOutside);
     } else {
       document.body.style.overflow = "auto";
-      // Remove event listener when modal is closed
       document.removeEventListener("mousedown", handleClickOutside);
     }
 
-    // Cleanup function to remove the style when component unmounts
     return () => {
       document.body.style.overflow = "auto";
       document.removeEventListener("mousedown", handleClickOutside);
@@ -55,13 +51,11 @@ const CarouselPage = () => {
         style={{ backgroundImage: 'url("/images/background.webp")' }}
       >
         <div className="max-w-screen-lg mx-auto px-5">
-         
-            <div className="flex justify-center items-center">
-              <PrimaryChip>
-                <span className="">Web Design</span>
-              </PrimaryChip>
-            </div>
-  
+          <div className="flex justify-center items-center">
+            <PrimaryChip>
+              <span className="">Web Design</span>
+            </PrimaryChip>
+          </div>
           <h1 className="text-3xl font-bold mb-4 text-center p-4 text-white">
             Some pieces of my work
           </h1>
@@ -72,127 +66,62 @@ const CarouselPage = () => {
             your vision to life and drive tangible results, I'm here to help.
           </p>
           <div className="flex justify-center items-center py-4">
-          <Link to="/webDesign">
-            <NoOutlinedButton>
-              <span className="flex items-center">
-                Web Design
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="25"
-                  height="25"
-                  viewBox="0 0 25 25"
-                  fill="none"
-                  className="ml-2"
-                >
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M9.5 7.25C9.08579 7.25 8.75 6.91421 8.75 6.5C8.75 6.08579 9.08579 5.75 9.5 5.75H18.5C18.9142 5.75 19.25 6.08579 19.25 6.5V15.5C19.25 15.9142 18.9142 16.25 18.5 16.25C18.0858 16.25 17.75 15.9142 17.75 15.5V8.31066L7.03033 19.0303C6.73744 19.3232 6.26256 19.3232 5.96967 19.0303C5.67678 18.7374 5.67678 18.2626 5.96967 17.9697L16.6893 7.25H9.5Z"
-                    fill="#F7B329"
-                  />
-                </svg>
-              </span>
-            </NoOutlinedButton>
+            <Link to="/webDesign">
+              <NoOutlinedButton>
+                <span className="flex items-center">
+                  Web Design
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    className="ml-2"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M9.5 7.25C9.08579 7.25 8.75 6.91421 8.75 6.5C8.75 6.08579 9.08579 5.75 9.5 5.75H18.5C18.9142 5.75 19.25 6.08579 19.25 6.5V15.5C19.25 15.9142 18.9142 16.25 18.5 16.25C18.0858 16.25 17.75 15.9142 17.75 15.5V8.31066L7.03033 19.0303C6.73744 19.3232 6.26256 19.3232 5.96967 19.0303C5.67678 18.7374 5.67678 18.2626 5.96967 17.9697L16.6893 7.25H9.5Z"
+                      fill="#F7B329"
+                    />
+                  </svg>
+                </span>
+              </NoOutlinedButton>
             </Link>
           </div>
-          <TECarousel showControls showIndicators ride="carousel">
-            <div className="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
-              <TECarouselItem
-                itemID={1}
-                className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                style={{ padding: "0 200px" }}
-                onClick={() => handleImageClick("/images/bank-dark mode.webp")}
-              >
-                <img
-                  src="/images/rebank.webp"
-                  className="block w-full"
-                  alt="..."
-                />
-              </TECarouselItem>
-              <TECarouselItem
-                itemID={2}
-                className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                style={{ padding: "0 200px" }}
-                onClick={() => handleImageClick("/images/LoyaltyTXT.webp")}
-              >
-                <img
-                  src="/images/Marj-LoyaltyTXT.webp"
-                  className="block w-full"
-                  alt="..."
-                />
-              </TECarouselItem>
-              <TECarouselItem
-                itemID={3}
-                className="relative float-left hidden -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                style={{ padding: "0 200px" }}
-                onClick={() => handleImageClick("/images/Marj-Aif.webp")}
-              >
-                <img
-                  src="/images/Marj-Ai.webp"
-                  className="block w-full"
-                  alt="..."
-                />
-              </TECarouselItem>
-              <TECarouselItem
-                itemID={4}
-                className="relative float-left hidden -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                style={{ padding: "0 200px" }}
-                onClick={() => handleImageClick("/images/CARS2.webp")}
-              >
-                <img
-                  src="/images/cars.webp"
-                  className="block w-full"
-                  alt="..."
-                />
-              </TECarouselItem>
-             
-              <TECarouselItem
-                itemID={5}
-                className="relative float-left hidden -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                style={{ padding: "0 200px" }}
-                onClick={() => handleImageClick("/images/NFT MARJ.webp")}
-              >
-                <img src="/images/nft.webp" className="block w-full" alt="..." />
-              </TECarouselItem>
-              {/* Additional Carousel Items */}
-              <TECarouselItem
-                itemID={6}
-                className="relative float-left hidden -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                style={{ padding: "0 200px" }}
-                onClick={() => handleImageClick("/images/BURGER 1.webp")}
-              >
-                <img
-                  src="/images/burger.webp"
-                  className="block w-full"
-                  alt="..."
-                />
-              </TECarouselItem>
-              <TECarouselItem
-                itemID={7}
-                className="relative float-left hidden -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                style={{ padding: "0 200px" }}
-                onClick={() => handleImageClick("/images/Marj -Bike.webp")}
-              >
-                <img
-                  src="/images/bike.webp"
-                  className="block w-full"
-                  alt="..."
-                />
-              </TECarouselItem>
-              <TECarouselItem
-                itemID={8}
-                className="relative float-left hidden -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                style={{ padding: "0 200px" }}
-                onClick={() => handleImageClick("/images/Marj-cozy.webp")}
-              >
-                <img
-                  src="/images/cozy.webp"
-                  className="block w-full"
-                  alt="..."
-                />
-              </TECarouselItem>
-            </div>
-          </TECarousel>
+          {/* Hide carousel on mobile */}
+          <div className="hidden md:block">
+            <TECarousel showControls showIndicators ride="carousel">
+              <div className="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+                <TECarouselItem
+                  itemID={1}
+                  className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                  style={{ padding: "0 200px" }}
+                  onClick={() => handleImageClick("/images/bank-dark mode.webp")}
+                >
+                  <img
+                    src="/images/rebank.webp"
+                    className="block w-full"
+                    alt="..."
+                  />
+                </TECarouselItem>
+                {/* Additional Carousel Items */}
+                <TECarouselItem
+                  itemID={2}
+                  className="relative float-left hidden -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                  style={{ padding: "0 200px" }}
+                  onClick={() => handleImageClick("/images/LoyaltyTXT.webp")}
+                >
+                  <img
+                    src="/images/Marj-LoyaltyTXT.webp"
+                    className="block w-full"
+                    alt="..."
+                  />
+                </TECarouselItem>
+                {/* More TECarouselItem components as needed */}
+              </div>
+            </TECarousel>
+          </div>
         </div>
       </div>
 
