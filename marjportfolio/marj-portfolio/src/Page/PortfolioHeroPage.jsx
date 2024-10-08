@@ -15,10 +15,10 @@ const PortfolioHeroPage = () => {
         style={{ backgroundImage: `url(/images/bg1.webp)` }}
       >
         {/* Left Column */}
-        <div className="w-1/2 pl-100">
+        <div className="w-2/3 ">
           {/* <img src="/images/Multiplayer1.webp" alt="Background" className="absolute inset-40 object-cover h-12 opacity-100 animate-move" /> */}
           <div className="px-8">
-          <h1 className="text-mh2.5 md:text-mh7 font-bold text-white leading-none mb-8">
+          <h1 className="text-mh3 md:text-mh7 font-bold text-white leading-none mb-8">
               Let's{" "}
               <span
                 style={{
@@ -42,7 +42,7 @@ const PortfolioHeroPage = () => {
             <Link to="/webDesign">
             
            
-            <span className="flex ">
+            <span className="flex  ">
               Figma Designs
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +65,7 @@ const PortfolioHeroPage = () => {
         </div>
 
         {/* Right Column */}
-        <div className="flex justify-end items-center w-1/2 p-10">
+        <div className="flex justify-end items-center ">
           {/* Arrow Down SVG */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
