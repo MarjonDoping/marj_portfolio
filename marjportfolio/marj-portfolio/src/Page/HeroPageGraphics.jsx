@@ -4,13 +4,20 @@ import { NoOutlinedButton } from "../components/Button";
 
 const HeroPageGraphics = () => {
   return (
-    <div className="max-w-screen-m bg-primaryBlack p-24 ">
+    <div className="max-w-screen-m bg-primaryBlack p-4 ">
       <div className="bg-primaryBlack ">
         <div className="max-w-screen-lg mx-auto p-4">
           <div className="flex items-center justify-between">
             <div className="w-full pr-4">
-              <h2 className="text-mh4 font-medium text-white">
-                Elevate Your Visual Identity with my Expert Graphic Design!
+              <h2 className="text-mh3 md:text-mh7 font-bold leading-none text-center mt-7  text-white">
+                Elevate Your Visual Identity with my <span  style={{
+                  display: "inline-block",
+                  backgroundImage:
+                    "linear-gradient(227deg, #9DE8EE 2.39%, #1A6350 2.41%, #F829AD 48.1%, #FBF1A0 95.67%)",
+                  WebkitBackgroundClip: "text",
+                  backgroundClip: "text",
+                  color: "transparent",
+                }}>Expert Graphic Design!</span>
               </h2>
             </div>
           </div>
@@ -20,7 +27,7 @@ const HeroPageGraphics = () => {
         <Link to="https://newmediaservices.com.au/blog/" className="custom-card flex-1 max-w-xs md:max-w-md lg:max-w-lg rounded overflow-hidden shadow-lg m-4">
           <img className="w-full" src="/images/NMS.webp" alt="Card image" />
           <div className="px-4 py-4 flex flex-col justify-between items-center bg-secondaryBlack">
-            <div className="px-6 py-4 flex flex-col justify-between items-center bg-secondaryBlack">
+            <div className="px-0 py-4 flex flex-col justify-between items-center bg-secondaryBlack">
               <div className=" flex items-center justify-end ">
                 <p className="text-white text-base justify-end items-center mr-8">
                   New Media Services Banners and Cover Pages for the posts to publish

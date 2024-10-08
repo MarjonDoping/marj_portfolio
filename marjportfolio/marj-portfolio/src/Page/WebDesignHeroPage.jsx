@@ -34,7 +34,7 @@ const WebDesignHeroPage = () => {
               >
                 Build{" "}
               </span>{" "}
-              your <br /> Website website <br /> now on Figma!
+              your <br />website <br /> now on Figma!
             </h1>
           </div>
 

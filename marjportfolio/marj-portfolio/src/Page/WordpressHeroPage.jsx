@@ -13,16 +13,16 @@ const WordpressHeroPage = () => {
     <div className="flex max-w-screen-lg flex-wrap justify-center items-center bg-cover bg-black bg-center mx-auto  font-plus jakarta sans " style={{ backgroundImage: `url(/images/bg1.webp)` }}>
       {/* Left Column */}
       <div className="w-1/2  pl-100">
-        <div className="px-8">
+        <div className="px-2">
        
-          <h1 className="text-mh1 items-center text-white font-bold mb-4 leading-none ">"Ready to <span style={{
+        <h1 className="text-mh3 md:text-mh7 font-bold leading-none mb-8  text-white">Ready to <span style={{
         display: 'inline-block',
         backgroundImage: 'linear-gradient(142deg, #002268 2.02%, #A1D3FF 110.76%)',
         WebkitBackgroundClip: 'text',
         backgroundClip: 'text',
         color: 'transparent'
         
-      }}>Elevate Your Website?</span> With Wordpress" </h1>
+      }}>Elevate Your Website?</span> With Wordpress </h1>
     
        
         </div>

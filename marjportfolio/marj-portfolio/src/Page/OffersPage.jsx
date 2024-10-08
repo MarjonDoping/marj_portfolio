@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 const OffersPage = () => {
   return (
     <>
-      <div className="bg-cover bg-center py-8 px-8 sm:py-12 md:py-16 lg:py-24">
+      <div className="bg-cover bg-center py-8 px-8 sm:py-8 md:py-16 lg:py-24">
         <div >
           <div className="flex justify-center items-center">
             <PrimaryChip>
@@ -27,7 +27,7 @@ const OffersPage = () => {
             social media marketing, and project management, I'm here to offer
             customized solutions to meet your requirements.
           </p>
-          <div className="flex flex-wrap justify-center gap-4 items-center mx-auto p-4">
+          <div className="flex flex-wrap justify-center gap-4 items-center mx-auto ">
             <MainCard className="mb-4 sm:mb-0 sm:mr-4 lg:mr-8">
               <Link to="/webDesign">
                 <span>

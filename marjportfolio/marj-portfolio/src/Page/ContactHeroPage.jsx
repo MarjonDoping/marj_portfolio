@@ -57,8 +57,8 @@ const ContactHeroPage = () => {
 
   return (
     <div className="bg-primaryBlack">
-      <div className="flex max-w-screen-lg mx-auto">
-        <div className="w-1/3 p-6 ">
+      <div className="flex max-w-screen-lg mx-auto flex-col lg:flex-row">
+        <div className="w-full lg:w-1/3 p-6">
           <h1 className="text-3xl font-bold mb-4 text-white pt-12 sticky top-10">
             <span
               style={{
@@ -96,9 +96,9 @@ const ContactHeroPage = () => {
             </span>
           </h1>
         </div>
-        <div className="w-2/3 overflow-hidden">
+        <div className="w-full lg:w-2/3 overflow-hidden">
           <div className="h-full overflow-y-auto">
-            <div className="p-12 ">
+            <div className="p-8 ">
               <div className="w-full p-4 bg-secondaryBlack rounded-lg shadow sm:p-6 md:p-8">
                 <form className="space-y-6" onSubmit={handleSubmit}>
                   <div>
@@ -209,11 +209,11 @@ const ContactHeroPage = () => {
               </div>
             </div>
             {/* Additional Card */}
-            <div className="p-12 rounded-lg">
+            <div className="p-8 rounded-lg">
               <div className="w-full p-4 bg-secondaryBlack shadow">
                 <div className="grid grid-cols-2 gap-4">
                   {/* First Sub Card */}
-                  <div className="custom-card">
+                  <div className="relative custom-card">
                     <img
                       className="h-50 w-full rounded-lg"
                       src="/images/00.webp"
@@ -267,22 +267,6 @@ const ContactHeroPage = () => {
                 </div>
               </div>
             </div>
-
-            {/* <div className="px-12 p-8 rounded-lg ">
-              <div className="w-full p-4 bg-secondaryBlack rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
-                <h5 className="text-xl font-medium text-white">
-                  Additional Card
-                </h5>
-                <p className="text-white">
-                  This is another card below the form card.
-                </p>
-                <img
-                  src="/images/navbarImg.webp"
-                  alt="Image 1"
-                  className="w-auto"
-                />
-              </div>
-            </div> */}
           </div>
         </div>
       </div>

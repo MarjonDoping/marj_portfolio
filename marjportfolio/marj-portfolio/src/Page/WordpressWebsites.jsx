@@ -70,7 +70,7 @@ const WordpressWebsite = () => {
         );
 
   return (
-    <div className="bg-cover bg-center bg-repeat bg-white p-12">
+    <div className="bg-cover bg-center bg-repeat bg-white ">
       <div className="flex pt-6 max-w-screen-lg mx-auto px-12">
         <select
           className="bg-white rounded-lg  text-primaryBlack p-4"
@@ -89,7 +89,7 @@ const WordpressWebsite = () => {
         {/* Your content */}
       </div>
 
-      <div className="grid grid-cols-2 gap-8 max-w-screen-lg mx-auto py-12 px-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-screen-lg mx-auto py-8 px-8">
         {/* Cards */}
         {filteredCards.map((card) => (
           <div

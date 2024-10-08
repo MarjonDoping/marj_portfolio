@@ -107,118 +107,119 @@ const NavBar = () => {
               </Link>
             </li>
             <li ref={dropdownRef}>
-              <button
-                onClick={toggleDropdown}
-                className="flex justify-center items-center py-2 px-3 text-white rounded hover:bg-gray-800 md:hover:bg-gray-800 md:border-0 dark:text-w md:dark:hover:text-whitemd:dark:hover:bg-transparent"
+  <button
+    onClick={toggleDropdown}
+    className="flex justify-center items-center py-2 px-3 text-white rounded hover:bg-gray-800 md:hover:bg-gray-800 md:border-0 dark:text-w md:dark:hover:text-whitemd:dark:hover:bg-transparent"
+  >
+    SERVICES
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="18"
+      height="18"
+      viewBox="0 0 24 24"
+      fill="none"
+    >
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M12 3.25C12.4142 3.25 12.75 3.58579 12.75 4L12.75 18.1893L17.4697 13.4697C17.7626 13.1768 18.2374 13.1768 18.5303 13.4697C18.8232 13.7626 18.8232 14.2374 18.5303 14.5303L12.5303 20.5303C12.3897 20.671 12.1989 20.75 12 20.75C11.8011 20.75 11.6103 20.671 11.4697 20.5303L5.46967 14.5303C5.17678 14.2374 5.17678 13.7626 5.46967 13.4697C5.76256 13.1768 6.23744 13.1768 6.53033 13.4697L11.25 18.1893L11.25 4C11.25 3.58579 11.5858 3.25 12 3.25Z"
+        fill="#F7B329"
+      />
+    </svg>
+  </button>
+  {isDropdownOpen && (
+    <div className="fixed justify-center top-16 left-0 w-full bg-primaryBlack text-white py-12 px-2 mt-1 rounded shadow-lg z-50">
+      <div className="flex flex-row max-w-screen-lg mx-auto items-center justify-between">
+        <div className="w-1/3">
+          <ul>
+            <Link to="/webDesign">
+              <li className="flex py-3 text-xl hover:text-violet-500 md:hover:underline md:border-0 md:p-2">
+                WEB DESIGN
+              </li>
+            </Link>
+            <Link to="/Wordpress">
+              <li className="flex py-3 text-xl hover:text-violet-500 md:hover:underline md:border-0 md:p-2">
+                WORDPRESS DEVELOPMENT
+              </li>
+            </Link>
+            <Link to="/graphicDesigns">
+              <li className="flex py-3 text-xl hover:text-violet-500 md:hover:underline md:border-0 md:p-2">
+                GRAPHIC DESIGN
+              </li>
+            </Link>
+          </ul>
+        </div>
+        <div className="w-1/3">
+          <Link to="/contactPage">
+            <p className="flex py-3 mr-8 mx-auto items-center justify-between">
+              Collaborate with me
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
               >
-                SERVICES
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="18"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M12 3.25C12.4142 3.25 12.75 3.58579 12.75 4L12.75 18.1893L17.4697 13.4697C17.7626 13.1768 18.2374 13.1768 18.5303 13.4697C18.8232 13.7626 18.8232 14.2374 18.5303 14.5303L12.5303 20.5303C12.3897 20.671 12.1989 20.75 12 20.75C11.8011 20.75 11.6103 20.671 11.4697 20.5303L5.46967 14.5303C5.17678 14.2374 5.17678 13.7626 5.46967 13.4697C5.76256 13.1768 6.23744 13.1768 6.53033 13.4697L11.25 18.1893L11.25 4C11.25 3.58579 11.5858 3.25 12 3.25Z"
-                    fill="#F7B329"
-                  />
-                </svg>
-              </button>
-              {isDropdownOpen && (
-                <div className="fixed justify-center top-16 left-0 w-full bg-primaryBlack text-white py-12 px-3 mt-1 rounded shadow-lg z-50">
-                  <div className="flex flex-row max-w-screen-lg mx-auto items-center justify-between">
-                    <div className="w-1/3">
-                      <ul>
-                        <Link to="/webDesign">
-                          <li className="flex py-3 text-xl hover:text-violet-500 md:hover:underline md:border-0 md:p-2">
-                            WEB DESIGN
-                          </li>
-                        </Link>
-                        <Link to="/Wordpress">
-                          <li className="flex py-3 text-xl hover:text-violet-500 md:hover:underline md:border-0 md:p-2">
-                            WORDPRESS DEVELOPMENT
-                          </li>
-                        </Link>
-                        <Link to="/graphicDesigns">
-                          <li className="flex py-3 text-xl hover:text-violet-500 md:hover:underline md:border-0 md:p-2">
-                            GRAPHIC DESIGN
-                          </li>
-                        </Link>
-                      </ul>
-                    </div>
-                    <div className="w-1/3">
-                      <Link to="/contactPage">
-                        <p className="flex py-3 mr-8 mx-auto items-center justify-between">
-                          Collaborate with me
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="18"
-                            height="18"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                          >
-                            <path
-                              fillRule="evenodd"
-                              clipRule="evenodd"
-                              d="M12 3C11.4477 3 11 3.44772 11 4V10H4C3.44772 10 3 10.4477 3 11C3 11.5523 3.44772 12 4 12H11V18C11 18.5523 11.4477 19 12 19C12.5523 19 13 18.5523 13 18V12H20C20.5523 12 21 11.5523 21 11C21 10.4477 20.5523 10 20 10H13V4C13 3.44772 12.5523 3 12 3Z"
-                              fill="#F7B329"
-                            />
-                          </svg>
-                        </p>
-                      </Link>
-                      <hr className="mr-8" />
-                      <a href="https://www.behance.net/marjondoping">
-                        <p className="flex py-3 mr-8 mx-auto items-center justify-between">
-                          My Works
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="18"
-                            height="18"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                          >
-                            <path
-                              fillRule="evenodd"
-                              clipRule="evenodd"
-                              d="M12 3C11.4477 3 11 3.44772 11 4V10H4C3.44772 10 3 10.4477 3 11C3 11.5523 3.44772 12 4 12H11V18C11 18.5523 11.4477 19 12 19C12.5523 19 13 18.5523 13 18V12H20C20.5523 12 21 11.5523 21 11C21 10.4477 20.5523 10 20 10H13V4C13 3.44772 12.5523 3 12 3Z"
-                              fill="#F7B329"
-                            />
-                          </svg>
-                        </p>
-                      </a>
-                      <hr className="mr-8" />
-                      <p className="flex py-3 mr-8 mx-auto items-center justify-between">
-                        Why use Figma for Web Design?
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="18"
-                          height="18"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                        >
-                          <path
-                            fillRule="evenodd"
-                            clipRule="evenodd"
-                            d="M12 3C11.4477 3 11 3.44772 11 4V10H4C3.44772 10 3 10.4477 3 11C3 11.5523 3.44772 12 4 12H11V18C11 18.5523 11.4477 19 12 19C12.5523 19 13 18.5523 13 18V12H20C20.5523 12 21 11.5523 21 11C21 10.4477 20.5523 10 20 10H13V4C13 3.44772 12.5523 3 12 3Z"
-                            fill="#F7B329"
-                          />
-                        </svg>
-                      </p>
-                    </div>
-                    <div className="w-1/3">
-                      <img
-                        src="/images/prototyping.webp"
-                        alt="Image 1"
-                        className="w-auto"
-                      />
-                    </div>
-                  </div>
-                </div>
-              )}
-            </li>
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M12 3C11.4477 3 11 3.44772 11 4V10H4C3.44772 10 3 10.4477 3 11C3 11.5523 3.44772 12 4 12H11V18C11 18.5523 11.4477 19 12 19C12.5523 19 13 18.5523 13 18V12H20C20.5523 12 21 11.5523 21 11C21 10.4477 20.5523 10 20 10H13V4C13 3.44772 12.5523 3 12 3Z"
+                  fill="#F7B329"
+                />
+              </svg>
+            </p>
+          </Link>
+          <hr className="mr-8" />
+          <a href="https://www.behance.net/marjondoping">
+            <p className="flex py-3 mr-8 mx-auto items-center justify-between">
+              My Works
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M12 3C11.4477 3 11 3.44772 11 4V10H4C3.44772 10 3 10.4477 3 11C3 11.5523 3.44772 12 4 12H11V18C11 18.5523 11.4477 19 12 19C12.5523 19 13 18.5523 13 18V12H20C20.5523 12 21 11.5523 21 11C21 10.4477 20.5523 10 20 10H13V4C13 3.44772 12.5523 3 12 3Z"
+                  fill="#F7B329"
+                />
+              </svg>
+            </p>
+          </a>
+          <hr className="mr-8" />
+          <p className="flex py-3 mr-8 mx-auto items-center justify-between">
+            Why use Figma for Web Design?
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M12 3C11.4477 3 11 3.44772 11 4V10H4C3.44772 10 3 10.4477 3 11C3 11.5523 3.44772 12 4 12H11V18C11 18.5523 11.4477 19 12 19C12.5523 19 13 18.5523 13 18V12H20C20.5523 12 21 11.5523 21 11C21 10.4477 20.5523 10 20 10H13V4C13 3.44772 12.5523 3 12 3Z"
+                fill="#F7B329"
+              />
+            </svg>
+          </p>
+        </div>
+        <div className="w-1/3 md:block hidden">
+          <img
+            src="/images/prototyping.webp"
+            alt="Image 1"
+            className="w-auto"
+          />
+        </div>
+      </div>
+    </div>
+  )}
+</li>
+
             <li>
               <Link
                 to="/contactPage"
