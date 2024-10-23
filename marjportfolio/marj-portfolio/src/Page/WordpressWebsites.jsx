@@ -38,7 +38,7 @@ const WordpressWebsite = () => {
 
     {
       id: 3,
-      image: "/images/LOAD.png",
+      image: "/images/LOAD.webp",
       title: "LOAD AND TILT Towing Service",
       description:
         "Towing services website is designed to provide users with quick access to essential information. Featuring a clean and intuitive layout, visitors can easily find 24/7 emergency towing options, roadside assistance, and detailed service descriptions. ",
@@ -56,7 +56,7 @@ const WordpressWebsite = () => {
     },
     {
       id: 5,
-      image: "/images/towing.png",
+      image: "/images/towing.webp",
       title: "Candian Towing Ottawa",
       description:
         "Towing services website is designed to provide users with quick access to essential information. Featuring a clean and intuitive layout, visitors can easily find 24/7 emergency towing options, roadside assistance, and detailed service descriptions. ",
@@ -66,7 +66,7 @@ const WordpressWebsite = () => {
 
     {
       id: 6,
-      image: "/images/ref.png",
+      image: "/images/ref.webp",
       title: "Ottawa Millwork Ref",
       description:
         "Millwork services website showcases the artistry and craftsmanship behind custom wood products. The design features stunning imagery that highlights our work, from bespoke cabinetry to intricate furniture pieces. ",

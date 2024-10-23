@@ -18,7 +18,7 @@ const Livepreview = () => {
 
     {
       id: 0,
-      image: "/images/LOAD.png",
+      image: "/images/LOAD.webp",
       title: "LOAD AND TILT Towing Service",
       description: "Each service—whether it’s local and long-distance towing recovery—is presented with engaging visuals and user-friendly navigation. ",
       categories: [ "DESIGN" ,"FIGMA"],
@@ -35,7 +35,7 @@ const Livepreview = () => {
    
     {
       id: 2,
-      image: "/images/towing1.png",
+      image: "/images/towing.webp",
       title: "Canadian Towing Ottawa",
       description: "Local and Long-Distance Towing: Transporting vehicles within cities and across provinces.",
       categories: [ "DESIGN" ,"FIGMA"],
@@ -44,7 +44,7 @@ const Livepreview = () => {
 
     {
       id: 2,
-      image: "/images/ref.png",
+      image: "/images/ref.webp",
       title: "REF Ottawa Millwork",
       description: "Millwork services website showcases the artistry and craftsmanship behind custom wood products.",
       categories: [ "DESIGN" ,"FIGMA"],
