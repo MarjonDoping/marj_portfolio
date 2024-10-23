@@ -38,15 +38,44 @@ const WordpressWebsite = () => {
 
     {
       id: 3,
+      image: "/images/LOAD.png",
+      title: "LOAD AND TILT Towing Service",
+      description:
+        "Towing services website is designed to provide users with quick access to essential information. Featuring a clean and intuitive layout, visitors can easily find 24/7 emergency towing options, roadside assistance, and detailed service descriptions. ",
+      categories: ["WORDPRESS DEVELOPMENT", "ELEMENTOR", "SEO"],
+      link: "https://dmtiltnload.ca/",
+    },
+
+    {
+      id: 4,
       image: "/images/supporttxt.webp",
       title: "SUPPORTTXT",
-      description:
-        "Share stories about members of your community and their accomplishments, challenges, and experiences.",
+      description: "Each service—whether it’s local and long-distance towing recovery—is presented with engaging visuals and user-friendly navigation. ",
       categories: ["WORDPRESS DEVELOPMENT", "OXYGEN", "SEO"],
       link: "https://supporttxt.com/",
     },
     {
-      id: 4,
+      id: 5,
+      image: "/images/towing.png",
+      title: "Candian Towing Ottawa",
+      description:
+        "Towing services website is designed to provide users with quick access to essential information. Featuring a clean and intuitive layout, visitors can easily find 24/7 emergency towing options, roadside assistance, and detailed service descriptions. ",
+      categories: ["WORDPRESS DEVELOPMENT", "ELEMENTOR", "SEO"],
+      link: "https://canadiantowingottawa.com/",
+    },
+
+    {
+      id: 6,
+      image: "/images/ref.png",
+      title: "Ottawa Millwork Ref",
+      description:
+        "Millwork services website showcases the artistry and craftsmanship behind custom wood products. The design features stunning imagery that highlights our work, from bespoke cabinetry to intricate furniture pieces. ",
+      categories: ["WORDPRESS DEVELOPMENT", "ELEMENTOR", "SEO"],
+      link: "https://ottawamillwork.ca/",
+    },
+
+    {
+      id: 7,
       image: "/images/LCF.webp",
       title: "LIVE CHAT FAIRIES",
       description:
