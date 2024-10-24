@@ -8,6 +8,7 @@ import WebdesignAccordion from './WebdesignAccordion';
 import CollaboratePage from './CollaboratePage';
 import Footer from './Footer';
 import OffersPage from './OffersPage';
+import Livepreview from './Livepreview';
 
 const WebDesign = () => {
   useEffect(() => {
@@ -19,6 +20,7 @@ const WebDesign = () => {
     <>
       <NavBar />
       <WebDesignHeroPage />
+      <Livepreview/>
       <WebdesignCards />
       <FigmaBoard />
       <WebdesignAccordion />
