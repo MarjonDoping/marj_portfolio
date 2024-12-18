@@ -15,7 +15,6 @@ const HeroPage = () => {
         backgroundImage: `url("images/bg.webp")`,
       }}
     >
-      
       <div className="text-white text-center font-jakarta">
         <img
           src="/images/Multiplayer1.webp"
@@ -24,23 +23,22 @@ const HeroPage = () => {
         />
 
         <div className="text-center">
-        <h1 className="text-mh2.5 md:text-mh7 font-bold leading-none mb-8">
-  Need a <br />
-  <span
-    style={{
-      display: "inline-block",
-      backgroundImage:
-        "linear-gradient(227deg, #9DE8EE 2.39%, #1A6350 2.41%, #F829AD 48.1%, #FBF1A0 95.67%)",
-      WebkitBackgroundClip: "text",
-      backgroundClip: "text",
-      color: "transparent",
-    }}
-  >
-    Website that
-  </span>
-  <br /> <span>wows?</span>
-</h1>
-
+          <h1 className="text-mh2.5 md:text-mh7 font-bold leading-none mb-8">
+            Need a <br />
+            <span
+              style={{
+                display: "inline-block",
+                backgroundImage:
+                  "linear-gradient(227deg, #9DE8EE 2.39%, #1A6350 2.41%, #F829AD 48.1%, #FBF1A0 95.67%)",
+                WebkitBackgroundClip: "text",
+                backgroundClip: "text",
+                color: "transparent",
+              }}
+            >
+              Website that
+            </span>
+            <br /> <span>wows?</span>
+          </h1>
         </div>
         <img
           src="/images/Multiplayer.webp"
@@ -109,10 +107,14 @@ const HeroPage = () => {
             </NoOutlinedButton>
           </Link>
 
-          <Link to="/graphicDesigns" className="mb-4 md:mb-0">
+          <a
+            href="https://www.behance.net/marjondoping"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <NoOutlinedButton>
               <span className="flex items-center">
-                Graphic Designer
+                Behance Designs
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="25"
@@ -130,7 +132,7 @@ const HeroPage = () => {
                 </svg>
               </span>
             </NoOutlinedButton>
-          </Link>
+          </a>
         </div>
       </div>
     </div>

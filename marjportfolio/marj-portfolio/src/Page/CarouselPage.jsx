@@ -59,7 +59,7 @@ const CarouselPage = () => {
           <h1 className="text-3xl font-bold mb-4 text-center p-4 text-white">
             Some pieces of my work
           </h1>
-          <p className=" text-gray-200 mb-8 text-center">
+          <p className="text-gray-200 mb-8 text-center">
             These works highlights represent just a glimpse of my capabilities
             and the diverse range of projects I've had the privilege to work on.
             If you're seeking a dedicated digital professional who can bring
@@ -97,28 +97,85 @@ const CarouselPage = () => {
                   itemID={1}
                   className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
                   style={{ padding: "0 200px" }}
-                  onClick={() => handleImageClick("/images/bank-dark mode.webp")}
                 >
-                  <img
-                    src="/images/rebank.webp"
-                    className="block w-full"
-                    alt="..."
-                  />
+                  <a
+                    href="https://dmtiltnload.ca/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="/images/LOAD.webp"
+                      className="block w-full"
+                      alt="Rebank Project"
+                    />
+                  </a>
                 </TECarouselItem>
-                {/* Additional Carousel Items */}
                 <TECarouselItem
                   itemID={2}
                   className="relative float-left hidden -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
                   style={{ padding: "0 200px" }}
-                  onClick={() => handleImageClick("/images/LoyaltyTXT.webp")}
+                >
+              
+                  <a
+                    href="https://newmediaservices.com.au/home-light/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="/images/NMS.png"
+                      className="block w-full"
+                      alt="Rebank Project"
+                    />
+                  </a>
+                </TECarouselItem>
+                <TECarouselItem
+                  itemID={3}
+                  className="relative float-left hidden -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                  style={{ padding: "0 200px" }}
+                 
+                >
+                 <a
+                    href="https://canadiantowingottawa.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="/images/towing1.png"
+                      className="block w-full"
+                      alt="Rebank Project"
+                    />
+                  </a>
+                </TECarouselItem>
+                <TECarouselItem
+                  itemID={4}
+                  className="relative float-left hidden -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                  style={{ padding: "0 200px" }}
+                 
+                >
+                  <a
+                    href="https://www.ballertube.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="/images/Ballertube.webp"
+                      className="block w-full"
+                      alt="Rebank Project"
+                    />
+                  </a>
+                </TECarouselItem>
+                <TECarouselItem
+                  itemID={5}
+                  className="relative float-left hidden -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                  style={{ padding: "0 200px" }}
+                  onClick={() => handleImageClick("/images/bank-dark mode.webp")}
                 >
                   <img
-                    src="/images/Marj-LoyaltyTXT.webp"
+                      src="/images/rebank.webp"
                     className="block w-full"
-                    alt="..."
+                    alt="Project 5"
                   />
                 </TECarouselItem>
-                {/* More TECarouselItem components as needed */}
               </div>
             </TECarousel>
           </div>
@@ -150,7 +207,7 @@ const CarouselPage = () => {
                   fill="white"
                 />
                 <path
-                  d="M8.96967 8.96967C9.26256 8.67678 9.73744 8.67678 10.0303 8.96967L12 10.9394L13.9697 8.96969C14.2626 8.6768 14.7374 8.6768 15.0303 8.96969C15.3232 9.26258 15.3232 9.73746 15.0303 10.0304L13.0607 12L15.0303 13.9696C15.3232 14.2625 15.3232 14.7374 15.0303 15.0303C14.7374 15.3232 14.2625 15.3232 13.9696 15.0303L12 13.0607L10.0304 15.0303C9.73746 15.3232 9.26258 15.3232 8.96969 15.0303C8.6768 14.7374 8.6768 14.2626 8.96969 13.9697L10.9394 12L8.96967 10.0303C8.67678 9.73744 8.67678 9.26256 8.96967 8.96967Z"
+                  d="M8.96967 8.96967C9.26256 8.67678 9.73744 8.67678 10.0303 8.96967L12 10.9394L13.9697 8.96969C14.2626 8.6768 14.7374 8.6768 15.0303 8.96969C15.3232 9.26258 15.3232 9.73746 15.0303 10.0304L13.0607 12L15.0303 13.9696C15.3232 14.2625 15.3232 14.7374 15.0303 15.0303C14.7374 15.3232 14.2625 15.3232 13.9696 15.0303L12 13.0606L10.0303 15.0303C9.73744 15.3232 9.26256 15.3232 8.96967 15.0303C8.67678 14.7374 8.67678 14.2625 8.96967 13.9696L10.9393 12L8.96967 10.0303C8.67678 9.73744 8.67678 9.26256 8.96967 8.96967Z"
                   fill="white"
                 />
               </svg>
