@@ -35,11 +35,11 @@ const Livepreview = () => {
    
     {
       id: 2,
-      image: "/images/Marj-Ai.webp",
-      title: "Smart AI landing Page (Light)",
-      description: "Explore our suite of AI-powered tools designed to enhance productivity, improve decision-making",
+      image: "/images/Ballertube.webp",
+      title: "BallerTube",
+      description: "Watch Sports and Action videos and livestream from this website application",
       categories: [ "DESIGN" ,"FIGMA"],
-      link: "https://smartai-six.vercel.app/"
+      link: "https://www.ballertube.com/"
     },
    
     {
@@ -62,6 +62,15 @@ const Livepreview = () => {
 
     {
       id: 5,
+      image: "/images/Marj-Ai.webp",
+      title: "Smart AI landing Page (Light)",
+      description: "Explore our suite of AI-powered tools designed to enhance productivity, improve decision-making",
+      categories: [ "DESIGN" ,"FIGMA"],
+      link: "https://smartai-six.vercel.app/"
+    },
+
+    {
+      id: 6,
       image: "/images/Marj-LoyaltyTXT.webp",
       title: "LoyaltyTXT landing Page",
       description: "Explore our suite of LoyaltyTXT designed for broadcasting application features",
@@ -70,21 +79,12 @@ const Livepreview = () => {
     },
 
     {
-      id: 6,
+      id: 7,
       image: "/images/marj-ai2.webp",
       title: "Smart AI Landing Page",
       description: "Our cutting-edge artificial intelligence solutions empower businesses to transform data into actionable insights, streamline operations.",
       categories: ["WEB DEVELOPMENT", "DESIGN" ,"FIGMA"],
       link: "https://www.behance.net/gallery/199831011/AI-Landing-Page"
-    },
-
-    {
-      id: 7,
-      image: "/images/Ballertube.webp",
-      title: "BallerTube",
-      description: "Watch Sports and Action videos and livestream from this website application",
-      categories: [ "DESIGN" ,"FIGMA"],
-      link: "https://www.ballertube.com/"
     },
 
     {
