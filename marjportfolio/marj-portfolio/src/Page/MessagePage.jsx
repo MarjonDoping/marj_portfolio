@@ -19,7 +19,7 @@ const MessagePage = () => {
 
           </div>
           <div className="pt-4">
-          <Avatar1/>
+          {/* <Avatar1/> */}
           </div>
          
         </div>
