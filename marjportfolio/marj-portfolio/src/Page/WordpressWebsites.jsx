@@ -18,6 +18,16 @@ const WordpressWebsite = () => {
   const yourCardsData = [
     {
       id: 1,
+      image: "/images/NMS.png",
+      title: "NMS Light",
+      description:
+        "New Media Services offers outsourced business services utilizing the collaboration of human and AI outsourcing solutions to upgrade your services and day-to-day operations.",
+      categories: ["WORDPRESS DEVELOPMENT", "OXYGEN", "SEO"],
+      link: "https://newmediaservices.com.au/home-light/",
+    },
+
+    {
+      id: 1,
       image: "/images/NMS.webp",
       title: "NEW MEDIA SERVICES",
       description:
