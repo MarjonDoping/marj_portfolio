@@ -117,7 +117,7 @@ const CarouselPage = () => {
                 >
               
                   <a
-                    href="https://newmediaservices.com.au/home-light/"
+                    href="https://newmediaservices.com.au/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
