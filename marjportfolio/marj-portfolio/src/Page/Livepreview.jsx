@@ -22,7 +22,7 @@ const Livepreview = () => {
       title: "NMS Services (Light)",
       description: "Explore our suite of AI-powered tools designed to enhance productivity, improve decision-making",
       categories: [ "DESIGN" ,"FIGMA"],
-      link: "https://newmediaservices.com.au/home-light/"
+      link: "https://newmediaservices.com.au"
     },
     {
       id: 1,
