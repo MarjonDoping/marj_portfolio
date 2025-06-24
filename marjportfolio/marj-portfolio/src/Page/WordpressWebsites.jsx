@@ -16,26 +16,37 @@ const WordpressWebsite = () => {
 
   // Sample data for cards
   const yourCardsData = [
+  
     {
       id: 1,
-      image: "/images/NMS.png",
-      title: "NMS Light",
-      description:
-        "New Media Services offers outsourced business services utilizing the collaboration of human and AI outsourcing solutions to upgrade your services and day-to-day operations.",
-      categories: ["WORDPRESS DEVELOPMENT", "OXYGEN", "SEO"],
-      link: "https://newmediaservices.com.au/home-light/",
-    },
-
-    {
-      id: 1,
-      image: "/images/NMS.webp",
-      title: "NEW MEDIA SERVICES",
+      image: "/images/nmslight.webp",
+      title: "New Media Services",
       description:
         "New Media Services offers outsourced business services utilizing the collaboration of human and AI outsourcing solutions to upgrade your services and day-to-day operations.",
       categories: ["WORDPRESS DEVELOPMENT", "OXYGEN", "SEO"],
       link: "https://newmediaservices.com.au/",
     },
 
+    {
+      id: 1,
+      image: "/images/Genesys.webp",
+      title: "Genesys",
+      description:
+        "AI Agents Come to Life. With Genesys, the future isn’t just imagined—it’s built.",
+      categories: ["WORDPRESS DEVELOPMENT", "OXYGEN", "SEO"],
+      link: "https://genesys.popai.agency/",
+    },
+
+    {
+      id: 1,
+      image: "/images/nmsai.webp",
+      title: "New Media AI",
+      description:
+        "AI Agents Come to Life. With Genesys, the future isn’t just imagined—it’s built.",
+      categories: ["WORDPRESS DEVELOPMENT", "OXYGEN", "SEO"],
+      link: "https://newmediaai.com/",
+    },
+    
     {
       id: 2,
       image: "/images/CHEKKEE.webp",
@@ -48,14 +59,34 @@ const WordpressWebsite = () => {
 
     {
       id: 3,
+      image: "/images/trace.webp",
+      title: "Trace Design",
+      description:
+        "Custom Shirt Design for Paddling, Surfing, MMA and BJJ",
+      categories: ["WORDPRESS DEVELOPMENT", "ELEMENTOR", "SEO"],
+      link: "https://trace-design.com/",
+    },
+
+    {
+      id: 3,
       image: "/images/LOAD.webp",
       title: "LOAD AND TILT Towing Service",
       description:
-        "Towing services website is designed to provide users with quick access to essential information. Featuring a clean and intuitive layout, visitors can easily find 24/7 emergency towing options, roadside assistance, and detailed service descriptions. ",
+        "Towing services website is designed to provide users with quick access to essential information. ",
       categories: ["WORDPRESS DEVELOPMENT", "ELEMENTOR", "SEO"],
       link: "https://dmtiltnload.ca/",
     },
 
+    {
+      id: 5,
+      image: "/images/towing.webp",
+      title: "Candian Towing Ottawa",
+      description:
+        "Towing services website is designed to provide users with quick access to essential information. ",
+      categories: ["WORDPRESS DEVELOPMENT", "ELEMENTOR", "SEO"],
+      link: "https://canadiantowingottawa.com/",
+    },
+    
     {
       id: 4,
       image: "/images/supporttxt.webp",
@@ -64,22 +95,14 @@ const WordpressWebsite = () => {
       categories: ["WORDPRESS DEVELOPMENT", "OXYGEN", "SEO"],
       link: "https://supporttxt.com/",
     },
-    {
-      id: 5,
-      image: "/images/towing.webp",
-      title: "Candian Towing Ottawa",
-      description:
-        "Towing services website is designed to provide users with quick access to essential information. Featuring a clean and intuitive layout, visitors can easily find 24/7 emergency towing options, roadside assistance, and detailed service descriptions. ",
-      categories: ["WORDPRESS DEVELOPMENT", "ELEMENTOR", "SEO"],
-      link: "https://canadiantowingottawa.com/",
-    },
+   
 
     {
       id: 6,
       image: "/images/ref.webp",
       title: "Ottawa Millwork Ref",
       description:
-        "Millwork services website showcases the artistry and craftsmanship behind custom wood products. The design features stunning imagery that highlights our work, from bespoke cabinetry to intricate furniture pieces. ",
+        "Millwork services website showcases the artistry and craftsmanship behind custom wood products. The design features stunning imagery that highlights our work.",
       categories: ["WORDPRESS DEVELOPMENT", "ELEMENTOR", "SEO"],
       link: "https://ottawamillwork.ca/",
     },
@@ -89,7 +112,7 @@ const WordpressWebsite = () => {
       image: "/images/LCF.webp",
       title: "LIVE CHAT FAIRIES",
       description:
-        "We are your one-stop shop for all chat operator services. Live chat operator services in real-time assist you in providing immediate assistance via integrable messaging platforms.",
+        "We are your one-stop shop for all chat operator services. Live chat operator services in real-time assist ",
       categories: ["WORDPRESS DEVELOPMENT", "ELEMENTOR", "SEO"],
       link: "https://livechatfairies.com/",
     },
@@ -136,7 +159,11 @@ const WordpressWebsite = () => {
             key={card.id}
           >
             <a href={card.link}>
-              <img className="rounded-t-lg" src={card.image} alt="" />
+              <img
+                className="rounded-t-lg w-full h-72 object-cover object-top"
+                src={card.image}
+                alt={card.title}
+              />
             </a>
             <div className="flex px-5 pt-5">
               {card.categories.map((category, index) => (
@@ -145,11 +172,11 @@ const WordpressWebsite = () => {
             </div>
             <div className="p-5">
               <a href={card.link}>
-                <h5 className="mb-6 text-2xl tracking-tight font-medium text-black">
+                <h5 className="mb-6 text-2xl tracking-tight font-normal text-gray-800">
                   {card.title}
                 </h5>
               </a>
-              <p className="mb-6 font-normal text-black ">
+              <p className="mb-6 font-normal text-gray-600 ">
                 {card.description}
               </p>
               <a href={card.link}>

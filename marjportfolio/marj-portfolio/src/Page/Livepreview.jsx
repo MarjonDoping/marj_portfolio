@@ -18,7 +18,7 @@ const Livepreview = () => {
 
     {
       id: 0,
-      image: "/images/NMS.png",
+      image: "/images/nmslight.webp",
       title: "NMS Services (Light)",
       description: "Explore our suite of AI-powered tools designed to enhance productivity, improve decision-making",
       categories: [ "DESIGN" ,"FIGMA"],
@@ -62,11 +62,38 @@ const Livepreview = () => {
 
     {
       id: 5,
+      image: "/images/nmsai.webp",
+      title: "New Media AI",
+      description: "Explore our suite of AI-powered tools designed to enhance productivity, improve decision-making",
+      categories: [ "DESIGN" ,"FIGMA","WEB DEVELOPMENT"],
+      link: "https://newmediai.com/"
+    },
+
+    {
+      id: 5,
+      image: "/images/Genesys.webp",
+      title: "Genesys",
+      description: "AI Agents Come to Life.,With Genesys, the future isn’t just imagined—it’s built.",
+      categories: [ "DESIGN" ,"FIGMA","WEB DEVELOPMENT"],
+      link: "https://genesys.popai.agency/"
+    },
+
+    {
+      id: 5,
+      image: "/images/trace.webp",
+      title: "Trace Designs",
+      description: "The Custom sports that can elevate your style and performance",
+      categories: [ "DESIGN" ,"FIGMA","WEB DEVELOPMENT"],
+      link: "https://trace-design.com/"
+    },
+
+    {
+      id: 5,
       image: "/images/Marj-Ai.webp",
       title: "Smart AI landing Page (Light)",
       description: "Explore our suite of AI-powered tools designed to enhance productivity, improve decision-making",
-      categories: [ "DESIGN" ,"FIGMA"],
-      link: "https://smartai-six.vercel.app/"
+      categories: [ "DESIGN","WEB DEVELOPMENT" ,"FIGMA"],
+      link: "https://newmediai.com/"
     },
 
     {
@@ -201,8 +228,12 @@ const Livepreview = () => {
             className="custom-card bg-secondaryBlack border rounded-lg shadow "
             key={card.id}
           >
-            <a href={card.link}>
-              <img className="rounded-t-lg" src={card.image} alt="" />
+           <a href={card.link}>
+              <img
+                className="rounded-t-lg w-full h-72 object-cover object-top"
+                src={card.image}
+                alt={card.title}
+              />
             </a>
             <div className="flex px-5 pt-5">
               {card.categories.map((category, index) => (
@@ -211,11 +242,11 @@ const Livepreview = () => {
             </div>
             <div className="p-5">
               <a href={card.link}>
-                <h5 className="mb-6 text-2xl tracking-tight text-gray-100">
+                <h5 className="mb-6 text-2xl tracking-tight text-gray-300">
                   {card.title}
                 </h5>
               </a>
-              <p className="mb-6 font-normal text-gray-100 ">
+              <p className="mb-6 font-normal text-gray-500 ">
                 {card.description}
               </p>
               <a href={card.link}>
