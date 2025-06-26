@@ -28,7 +28,7 @@ const NavBar = () => {
   }, []);
 
   const cvDownloadLink =
-    "https://drive.google.com/file/d/1qqGXjJ6pg8hJV87bNVR9br9eWtFd0Ent/view?usp=sharing";
+    "https://drive.google.com/file/d/10X73AlxJUjap2f_l_ZMaqNvGu91KYPjT/view?usp=sharing";
 
   const handleDownloadCV = () => {
     window.open(cvDownloadLink, "_blank");
